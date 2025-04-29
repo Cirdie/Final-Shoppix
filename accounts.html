@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script>
+    function getCookie(name) {
+      const cname = name + "=";
+      const decodedCookie = decodeURIComponent(document.cookie);
+      const ca = decodedCookie.split(';');
+      for (let i = 0; i < ca.length; i++) {
+        let c = ca[i].trim();
+        if (c.indexOf(cname) === 0) {
+          return c.substring(cname.length, c.length);
+        }
+      }
+      return "";
+    }
+  
+    const user = getCookie("loggedInUser");
+    if (!user) {
+      window.location.href = "login-register.html";
+    }
+  </script>
+  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FLATICON ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-straight/css/uicons-regular-straight.css"
+    />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+
+    <title>Ecommerce Website</title>
+  </head>
+  <body>
+     <!--=============== HEADER ===============-->
+     <header class="header">
+      <div class="header__top">
+        <div class="header__container container">
+          <div class="header__contact">
+            <span>(+63) - 976 - 030 - 6444</span>
+            <span>Tagum City</span>
+          </div>
+          <div class="header__center">
+            <p class="header__alert-news">
+              ✨ Super Value Deals - Save More With Coupons ✨
+            </p>
+          </div>
+          <div class="header__right">
+            <a href="login-register.html" class="header__top-action" id="headerAuthAction">
+              <i class="fi fi-rs-user"></i> Log In / Sign Up
+            </a>
+          </div>
+        </div>
+      </div>      
+
+      <nav class="nav container">
+        <a href="index.html" class="nav__logo">
+          <img
+            class="nav__logo-img"
+            src="assets/img/logo.svg"
+            alt="website logo"
+          />
+        </a>
+        <div class="nav__menu" id="nav-menu">
+          <div class="nav__menu-top">
+            <a href="index.html" class="nav__menu-logo">
+              <img src="./assets/img/logo.svg" alt="">
+            </a>
+            <div class="nav__close" id="nav-close">
+              <i class="fi fi-rs-cross-small"></i>
+            </div>
+          </div>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index.html" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="shop.html" class="nav__link">Shop</a>
+            </li>
+            <li class="nav__item">
+              <a href="accounts.html" class="nav__link active-link">My Account</a>
+            </li>
+            <li class="nav__item">
+              <a href="compare.html" class="nav__link">Compare</a>
+            </li>
+          
+            <li class="nav__item" id="mobileLoginItem" style="display: none;">
+              <a href="login-register.html" class="nav__link">Login</a>
+            </li>
+          
+            <li class="nav__item" id="mobileLogoutItem" style="display: none;">
+              <a href="#" class="nav__link">Logout</a>
+            </li>
+          </ul>
+                      
+          </ul>
+          <div class="header__search">
+            <input
+              type="text"
+              placeholder="Search For Items..."
+              class="form__input"
+            />
+            <button class="search__btn">
+              <img src="assets/img/search.png" alt="search icon" />
+            </button>
+          </div>
+        </div>
+        <div class="header__user-actions">
+          <a href="wishlist.html" class="header__action-btn" title="Wishlist">
+            <img src="assets/img/icon-heart.svg" alt="" />
+            <span class="count">3</span>
+          </a>
+          <a href="cart.html" class="header__action-btn" title="Cart">
+            <img src="assets/img/icon-cart.svg" alt="" />
+            <span class="count">3</span>
+          </a>
+          <div class="header__action-btn nav__toggle" id="nav-toggle">
+            <img src="./assets//img/menu-burger.svg" alt="">
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+      <!--=============== BREADCRUMB ===============-->
+      <section class="breadcrumb">
+        <ul class="breadcrumb__list flex container">
+          <li><a href="index.html" class="breadcrumb__link">Home</a></li>
+          <li><span class="breadcrumb__link">></span></li>
+          <li><span class="breadcrumb__link">Account</span></li>
+        </ul>
+      </section>
+
+      <!--=============== ACCOUNTS ===============-->
+      <section class="accounts section--lg">
+        <div class="accounts__container container grid">
+          <div class="account__tabs">
+            <p class="account__tab active-tab" data-target="#dashboard">
+              <i class="fi fi-rs-settings-sliders"></i> Dashboard
+            </p>
+            <p class="account__tab" data-target="#orders">
+              <i class="fi fi-rs-shopping-bag"></i> Orders
+            </p>
+            <p class="account__tab" data-target="#update-profile">
+              <i class="fi fi-rs-user"></i> Update Profile
+            </p>
+            <p class="account__tab" data-target="#address">
+              <i class="fi fi-rs-marker"></i> My Address
+            </p>
+            <p class="account__tab" data-target="#change-password">
+              <i class="fi fi-rs-settings-sliders"></i> Change Password
+            </p>
+            <p class="account__tab"><i class="fi fi-rs-exit"></i> Logout</p>
+          </div>
+          <div class="tabs__content">
+            <div class="tabs__content">
+
+              <div class="tab__content active-tab" content id="dashboard">
+                <h3 class="tab__header">Hello Cirde M. Mosquito</h3>
+                <div class="tab__body">
+                  <p class="tab__description">
+                    Welcome to your account dashboard. From here, you can easily view your recent orders, manage your shipping and billing addresses, and update your password and account details.
+                  </p>
+                </div>
+              </div>    
+
+              <div class="tab__content" content id="orders">
+                <h3 class="tab__header">Your Orders</h3>
+                <div class="tab__body">
+              
+                  <!-- Order Summary Card -->
+                  <div class="order__card">
+                    <div class="order__header flex-between">
+                      <span>Order ID: #1357</span>
+                      <span>Status: <strong class="order__status processing">Processing</strong></span>
+                    </div>
+                    <div class="order__item grid">
+                      <img src="assets/img/Poco-1-1.png" alt="Poco X5 Pro" class="order__img">
+                      <div class="order__details">
+                        <h4 class="order__product-name">Poco X5 Pro 5G 128GB</h4>
+                        <p class="order__meta">Quantity: 1</p>
+                        <p class="order__meta">Price: ₱16,999</p>
+                        <p class="order__meta">Estimated Delivery: May 4, 2025</p>
+                      </div>
+                      <div class="order__actions">
+                        <a href="#" class="btn btn--sm">Track Order</a>
+                        <a href="#" class="btn btn--sm btn-outline">View Details</a>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <div class="order__card">
+                    <div class="order__header flex-between">
+                      <span>Order ID: #2468</span>
+                      <span>Status: <strong class="order__status completed">Completed</strong></span>
+                    </div>
+                    <div class="order__item grid">
+                      <img src="assets/img/iPhone-13.png" alt="iPhone 13 Mini" class="order__img">
+                      <div class="order__details">
+                        <h4 class="order__product-name">iPhone 13 Mini 128GB</h4>
+                        <p class="order__meta">Quantity: 1</p>
+                        <p class="order__meta">Price: ₱44,990</p>
+                        <p class="order__meta">Delivered: April 21, 2025</p>
+                      </div>
+                      <div class="order__actions">
+                        <a href="#" class="btn btn--sm">Buy Again</a>
+                        <a href="#" class="btn btn--sm btn-outline">View Details</a>
+                      </div>
+                    </div>
+                  </div>
+              
+                </div>
+              </div>
+              
+              <div class="tab__content" content id="update-profile">
+                <h3 class="tab__header">Update Profile</h3>
+                <div class="tab__body">
+                  <form class="form grid update__form">
+                    <div class="form__group">
+                      <label for="name" class="form__label">Full Name</label>
+                      <input type="text" id="name" placeholder="Cirde M. Mosquito" class="form__input" />
+                    </div>
+              
+                    <div class="form__group">
+                      <label for="email" class="form__label">Email Address</label>
+                      <input type="email" id="email" placeholder="you@example.com" class="form__input" />
+                    </div>
+              
+                    <div class="form__group">
+                      <label for="phone" class="form__label">Phone Number</label>
+                      <input type="tel" id="phone" placeholder="+63 9760306444" class="form__input" />
+                    </div>
+              
+                    <div class="form__group">
+                      <label for="location" class="form__label">Location</label>
+                      <input type="text" id="location" placeholder="Tagum City, Philippines" class="form__input" />
+                    </div>
+              
+                    <div class="form__btn">
+                      <button class="btn btn--md" type="submit">Save Changes</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              
+              <div class="tab__content" content id="address">
+                <h3 class="tab__header">Shipping Address</h3>
+                <div class="tab__body">
+                  <div class="address__card">
+                    <address class="address">
+                      Cirde M. Mosquito <br />
+                      Purok 5, Brgy. Magugpo East <br />
+                      Tagum City, Davao del Norte <br />
+                      8100, Philippines
+                    </address>
+                    <p class="city">Mobile: +63 9760306444</p>
+                    <a href="#" class="edit btn btn-outline">Edit Address</a>
+                  </div>
+                </div>
+              </div>
+              
+            <div class="tab__content" content id="change-password">
+              <h3 class="tab__header">Change Password</h3>
+              <div class="tab__body">
+                <form class="form grid">
+                  <input
+                    type="password"
+                    placeholder="Current Password"
+                    class="form__input"
+                  />
+                  <input
+                    type="password"
+                    placeholder="New Password"
+                    class="form__input"
+                  />
+                  <input
+                    type="password"
+                    placeholder="Confirm Password"
+                    class="form__input"
+                  />
+                  <div class="form__btn">
+                    <button class="btn btn--md">Save</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!--=============== NEWSLETTER ===============-->
+    <section class="newsletter section">
+      <div class="newsletter__container container grid">
+        <h3 class="newsletter__title flex">
+          <img src="./assets/img/icon-email.svg" alt="" class="newsletter__icon" />
+          Join Our Community
+        </h3>
+        <p class="newsletter__description">
+          Get exclusive promos, flash sales alerts, and tech news straight to your inbox!
+        </p>
+        <form action="" class="newsletter__form">
+          <input type="text" placeholder="Enter Your Email" class="newsletter__input" />
+          <button type="submit" class="newsletter__btn">Subscribe</button>
+        </form>
+      </div>
+    </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+  <footer class="footer container">
+    <div class="footer__container grid">
+  
+      <div class="footer__content">
+        <a href="index.html" class="footer__logo">
+          <img src="./assets/img/logo.svg" alt="Soppix logo" class="footer__logo-img" />
+        </a>
+        <h4 class="footer__subtitle">Contact</h4>
+        <p class="footer__description">
+          <span>Address:</span> Tagum City, Philippines
+        </p>
+        <p class="footer__description">
+          <span>Phone:</span> +63 9760306444
+        </p>
+        <p class="footer__description">
+          <span>Hours:</span> 24 hours, Monday to Sunday
+        </p>
+        <div class="footer__social">
+          <h4 class="footer__subtitle">Follow Us</h4>
+          <div class="footer__links flex">
+            <a href="#"><img src="./assets/img/icon-facebook.svg" alt="Facebook" class="footer__social-icon" /></a>
+            <a href="#"><img src="./assets/img/icon-twitter.svg" alt="Twitter" class="footer__social-icon" /></a>
+            <a href="#"><img src="./assets/img/icon-instagram.svg" alt="Instagram" class="footer__social-icon" /></a>
+            <a href="#"><img src="./assets/img/icon-pinterest.svg" alt="Pinterest" class="footer__social-icon" /></a>
+            <a href="#"><img src="./assets/img/icon-youtube.svg" alt="YouTube" class="footer__social-icon" /></a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="footer__content">
+        <h3 class="footer__title">About</h3>
+        <ul class="footer__links">
+          <li><a href="#" class="footer__link">About Us</a></li>
+          <li><a href="#" class="footer__link">Delivery Information</a></li>
+          <li><a href="#" class="footer__link">Privacy Policy</a></li>
+          <li><a href="#" class="footer__link">Terms & Conditions</a></li>
+          <li><a href="#" class="footer__link">Contact Us</a></li>
+          <li><a href="#" class="footer__link">Support Center</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer__content">
+        <h3 class="footer__title">About</h3>
+        <ul class="footer__links">
+          <li><a href="about.html" class="footer__link">About Us</a></li>
+          <li><a href="DeliveryInformation.html" class="footer__link">Delivery Information</a></li>
+          <li><a href="privacy.html" class="footer__link">Privacy Policy</a></li>
+          <li><a href="terms.html" class="footer__link">Terms & Conditions</a></li>
+          <li><a href="contact.html" class="footer__link">Contact Us</a></li>
+          <li><a href="supportcenter.html" class="footer__link">Support Center</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer__content">
+        <h3 class="footer__title">Secured Payment Gateways</h3>
+        <img src="./assets/img/payment-method.png" alt="Payment Methods" class="payment__img" />
+      </div>
+  
+    </div>
+  
+    <div class="footer__bottom">
+      <p class="copyright">
+        &copy; 2025 <strong>Shoppix</strong>. All rights reserved.
+      </p>
+      <span class="designer">Designed by Cirde M. Mosquito</span>
+    </div>
+  </footer>
+
+  <!--=============== SWIPER JS ===============-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!--=============== MAIN JS ===============-->
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>

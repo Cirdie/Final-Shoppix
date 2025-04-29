@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <title>About Us - Shoppix</title>
+</head>
+
+<body>
+ <!--=============== HEADER ===============-->
+ <header class="header">
+    <div class="header__top">
+      <div class="header__container container">
+        <div class="header__contact">
+          <span>(+63) - 976 - 030 - 6444</span>
+          <span>Tagum City</span>
+        </div>
+        <div class="header__center">
+          <p class="header__alert-news">
+            ✨ Super Value Deals - Save More With Coupons ✨
+          </p>
+        </div>
+        <div class="header__right">
+          <a href="login-register.html" class="header__top-action" id="headerAuthAction">
+            <i class="fi fi-rs-user"></i> Log In / Sign Up
+          </a>
+        </div>
+      </div>
+    </div>      
+
+    <nav class="nav container">
+      <a href="index.html" class="nav__logo">
+        <img
+          class="nav__logo-img"
+          src="assets/img/logo.svg"
+          alt="website logo"
+        />
+      </a>
+      <div class="nav__menu" id="nav-menu">
+        <div class="nav__menu-top">
+          <a href="index.html" class="nav__menu-logo">
+            <img src="./assets/img/logo.svg" alt="">
+          </a>
+          <div class="nav__close" id="nav-close">
+            <i class="fi fi-rs-cross-small"></i>
+          </div>
+        </div>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link active-link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="shop.html" class="nav__link">Shop</a>
+          </li>
+          <li class="nav__item">
+            <a href="accounts.html" class="nav__link">My Account</a>
+          </li>
+          <li class="nav__item">
+            <a href="compare.html" class="nav__link">Compare</a>
+          </li>
+        
+          <li class="nav__item" id="mobileLoginItem" style="display: none;">
+            <a href="login-register.html" class="nav__link">Login</a>
+          </li>
+        
+          <li class="nav__item" id="mobileLogoutItem" style="display: none;">
+            <a href="#" class="nav__link">Logout</a>
+          </li>
+        </ul>
+                    
+        </ul>
+        <div class="header__search">
+          <input
+            type="text"
+            placeholder="Search For Items..."
+            class="form__input"
+          />
+          <button class="search__btn">
+            <img src="assets/img/search.png" alt="search icon" />
+          </button>
+        </div>
+      </div>
+      <div class="header__user-actions">
+        <a href="wishlist.html" class="header__action-btn" title="Wishlist">
+          <img src="assets/img/icon-heart.svg" alt="" />
+          <span class="count">3</span>
+        </a>
+        <a href="cart.html" class="header__action-btn" title="Cart">
+          <img src="assets/img/icon-cart.svg" alt="" />
+          <span class="count">3</span>
+        </a>
+        <div class="header__action-btn nav__toggle" id="nav-toggle">
+          <img src="./assets//img/menu-burger.svg" alt="">
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--=============== MAIN ===============-->
+  <main class="main">
+    
+    <!--=============== BREADCRUMB ===============-->
+    <section class="breadcrumb">
+      <ul class="breadcrumb__list flex container">
+        <li><a href="index.html" class="breadcrumb__link">Home</a></li>
+        <li><span class="breadcrumb__link">></span></li>
+        <li><span class="breadcrumb__link">About Us</span></li>
+      </ul>
+    </section>
+
+    <!--=============== ABOUT US ===============-->
+    <section class="about section--lg container">
+      <div class="about__container grid">
+        
+        <div class="about__content">
+          <h2 class="section__title">Welcome to Shoppix</h2>
+          <p class="about__description">
+            Shoppix is a proudly Filipino online store based in Tagum City, Davao del Norte.  
+            We offer the latest smartphones, gadgets, and tech accessories that fit your lifestyle.
+          </p>
+          <p class="about__description">
+            Established in 2024, our mission is to bring affordable, high-quality mobile devices closer to every Filipino.
+            Whether you’re upgrading your phone or surprising a loved one, Shoppix is your trusted partner for all your tech needs.
+          </p>
+        </div>
+
+        <div class="about__image">
+          <img src="./assets/img/about-banner.jpg" alt="About Shoppix" class="about__img" />
+        </div>
+        
+      </div>
+    </section>
+
+    <!--=============== WHY CHOOSE US ===============-->
+    <section class="why-choose section container">
+      <h2 class="section__title">Why Choose Shoppix?</h2>
+
+      <div class="why-choose__container grid">
+        
+        <div class="why-choose__card">
+          <i class="fi fi-rs-shield-check why-choose__icon"></i>
+          <h3 class="why-choose__title">Trusted Quality</h3>
+          <p class="why-choose__description">
+            100% authentic products, trusted brands, and guaranteed original units, always ready for you.
+          </p>
+        </div>
+
+        <div class="why-choose__card">
+          <i class="fi fi-rs-truck why-choose__icon"></i>
+          <h3 class="why-choose__title">Fast Nationwide Delivery</h3>
+          <p class="why-choose__description">
+            From Luzon to Mindanao – Shoppix delivers quickly and safely right at your doorstep.
+          </p>
+        </div>
+
+        <div class="why-choose__card">
+          <i class="fi fi-rs-headphones why-choose__icon"></i>
+          <h3 class="why-choose__title">Support 7 Days a Week</h3>
+          <p class="why-choose__description">
+            May tanong? Our friendly support team is here to help you anytime, Monday to Sunday.
+          </p>
+        </div>
+
+        <div class="why-choose__card">
+          <i class="fi fi-rs-credit-card why-choose__icon"></i>
+          <h3 class="why-choose__title">Flexible Payments</h3>
+          <p class="why-choose__description">
+            Pay via GCash, Maya, Bank Transfer, or Cash on Delivery (COD) for your convenience.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!--=============== OUR MISSION ===============-->
+    <section class="mission section--lg container">
+      <h2 class="section__title">Our Mission</h2>
+      <p class="mission__description">
+        At Shoppix, we aim to connect every Filipino to the best technology at affordable prices.  
+        We believe that great smartphones should be within reach of every Juan, whether you’re in the city or the province.  
+        We are committed to quality, service, and bringing the world’s best tech closer to home. 🇵🇭
+      </p>
+    </section>
+
+    <!--=============== NEWSLETTER ===============-->
+    <section class="newsletter section">
+      <div class="newsletter__container container grid">
+        <h3 class="newsletter__title flex">
+          <img src="./assets/img/icon-email.svg" alt="" class="newsletter__icon" />
+          Join Our Community
+        </h3>
+        <p class="newsletter__description">
+          Get exclusive promos, flash sales alerts, and tech news straight to your inbox!
+        </p>
+        <form action="" class="newsletter__form">
+          <input type="text" placeholder="Enter Your Email" class="newsletter__input" />
+          <button type="submit" class="newsletter__btn">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!--=============== FOOTER ===============-->
+  <footer class="footer container">
+    <div class="footer__container grid">
+  
+      <div class="footer__content">
+        <a href="index.html" class="footer__logo">
+          <img src="./assets/img/logo.svg" alt="Soppix logo" class="footer__logo-img" />
+        </a>
+        <h4 class="footer__subtitle">Contact</h4>
+        <p class="footer__description">
+          <span>Address:</span> Tagum City, Philippines
+        </p>
+        <p class="footer__description">
+          <span>Phone:</span> +63 9760306444
+        </p>
+        <p class="footer__description">
+          <span>Hours:</span> 24 hours, Monday to Sunday
+        </p>
+        <div class="footer__social">
+          <h4 class="footer__subtitle">Follow Us</h4>
+          <div class="footer__links flex">
+            <a href="#"><img src="./assets/img/icon-facebook.svg" alt="Facebook" class="footer__social-icon" /></a>
+            <a href="#"><img src="./assets/img/icon-twitter.svg" alt="Twitter" class="footer__social-icon" /></a>
+            <a href="#"><img src="./assets/img/icon-instagram.svg" alt="Instagram" class="footer__social-icon" /></a>
+            <a href="#"><img src="./assets/img/icon-pinterest.svg" alt="Pinterest" class="footer__social-icon" /></a>
+            <a href="#"><img src="./assets/img/icon-youtube.svg" alt="YouTube" class="footer__social-icon" /></a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="footer__content">
+        <h3 class="footer__title">About</h3>
+        <ul class="footer__links">
+          <li><a href="about.html" class="footer__link">About Us</a></li>
+          <li><a href="DeliveryInformation.html" class="footer__link">Delivery Information</a></li>
+          <li><a href="privacy.html" class="footer__link">Privacy Policy</a></li>
+          <li><a href="terms.html" class="footer__link">Terms & Conditions</a></li>
+          <li><a href="contact.html" class="footer__link">Contact Us</a></li>
+          <li><a href="supportcenter.html" class="footer__link">Support Center</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer__content">
+        <h3 class="footer__title">My Account</h3>
+        <ul class="footer__links">
+          <li><a href="#" class="footer__link">Sign In</a></li>
+          <li><a href="#" class="footer__link">View Cart</a></li>
+          <li><a href="#" class="footer__link">My Wishlist</a></li>
+          <li><a href="#" class="footer__link">Track My Order</a></li>
+          <li><a href="#" class="footer__link">Help</a></li>
+          <li><a href="#" class="footer__link">Order</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer__content">
+        <h3 class="footer__title">Secured Payment Gateways</h3>
+        <img src="./assets/img/payment-method.png" alt="Payment Methods" class="payment__img" />
+      </div>
+  
+    </div>
+  
+    <div class="footer__bottom">
+      <p class="copyright">
+        &copy; 2025 <strong>Shoppix</strong>. All rights reserved.
+      </p>
+      <span class="designer">Designed by Cirde M. Mosquito</span>
+    </div>
+  </footer>
+
+  <!--=============== SWIPER JS ===============-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!--=============== MAIN JS ===============-->
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
