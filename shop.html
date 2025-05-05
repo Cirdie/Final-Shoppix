@@ -1,881 +1,720 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--=============== FLATICON ===============-->
-    <link
-      rel="stylesheet"
-      href="https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-straight/css/uicons-regular-straight.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--=============== SWIPER CSS ===============-->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+  <!--=============== FLATICON ===============-->
+  <link rel="stylesheet"
+    href="https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-straight/css/uicons-regular-straight.css" />
 
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="./assets/css/styles.css" />
+  <!--=============== SWIPER CSS ===============-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    <title>Ecommerce Website</title>
-  </head>
-  <body>
-    <!--=============== HEADER ===============-->
-    <header class="header">
-      <div class="header__top">
-        <div class="header__container container">
-          <div class="header__contact">
-            <span>(+63) - 976 - 030 - 6444</span>
-            <span>Tagum City</span>
-          </div>
-          <div class="header__center">
-            <p class="header__alert-news">
-              ✨ Super Value Deals - Save More With Coupons ✨
-            </p>
-          </div>
-          <div class="header__right">
-            <a href="login-register.html" class="header__top-action" id="headerAuthAction">
-              <i class="fi fi-rs-user"></i> Log In / Sign Up
-            </a>
-          </div>
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+
+  <title>Ecommerce Website</title>
+</head>
+
+<body>
+  <!--=============== HEADER ===============-->
+  <header class="header">
+    <div class="header__top">
+      <div class="header__container container">
+        <div class="header__contact">
+          <span>(+63) - 976 - 030 - 6444</span>
+          <span>Tagum City</span>
         </div>
-      </div>      
-
-      <nav class="nav container">
-        <a href="index.html" class="nav__logo">
-          <img
-            class="nav__logo-img"
-            src="assets/img/logo.svg"
-            alt="website logo"
-          />
-        </a>
-        <div class="nav__menu" id="nav-menu">
-          <div class="nav__menu-top">
-            <a href="index.html" class="nav__menu-logo">
-              <img src="./assets/img/logo.svg" alt="">
-            </a>
-            <div class="nav__close" id="nav-close">
-              <i class="fi fi-rs-cross-small"></i>
-            </div>
-          </div>
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="index.html" class="nav__link">Home</a>
-            </li>
-            <li class="nav__item">
-              <a href="shop.html" class="nav__link">Shop</a>
-            </li>
-            <li class="nav__item">
-              <a href="accounts.html" class="nav__link">My Account</a>
-            </li>
-            <li class="nav__item">
-              <a href="compare.html" class="nav__link">Compare</a>
-            </li>
-          
-            <li class="nav__item" id="mobileLoginItem" style="display: none;">
-              <a href="login-register.html" class="nav__link">Login</a>
-            </li>
-          
-            <li class="nav__item" id="mobileLogoutItem" style="display: none;">
-              <a href="#" class="nav__link">Logout</a>
-            </li>
-          </ul>
-                      
-          </ul>
-          <div class="header__search">
-            <input
-              type="text"
-              placeholder="Search For Items..."
-              class="form__input"
-            />
-            <button class="search__btn">
-              <img src="assets/img/search.png" alt="search icon" />
-            </button>
-          </div>
+        <div class="header__center">
+          <p class="header__alert-news">
+            ✨ Super Value Deals - Save More With Coupons ✨
+          </p>
         </div>
-        <div class="header__user-actions">
-          <a href="wishlist.html" class="header__action-btn" title="Wishlist">
-            <img src="assets/img/icon-heart.svg" alt="" />
-            <span class="count">3</span>
+        <div class="header__right">
+          <a href="login-register.html" class="header__top-action" id="headerAuthAction">
+            <i class="fi fi-rs-user"></i> Log In / Sign Up
           </a>
-          <a href="cart.html" class="header__action-btn" title="Cart">
-            <img src="assets/img/icon-cart.svg" alt="" />
-            <span class="count">3</span>
+        </div>
+      </div>
+    </div>
+
+    <nav class="nav container">
+      <a href="index.html" class="nav__logo">
+        <img class="nav__logo-img" src="assets/img/logo.svg" alt="website logo" />
+      </a>
+      <div class="nav__menu" id="nav-menu">
+        <div class="nav__menu-top">
+          <a href="index.html" class="nav__menu-logo">
+            <img src="./assets/img/logo.svg" alt="">
           </a>
-          <div class="header__action-btn nav__toggle" id="nav-toggle">
-            <img src="./assets//img/menu-burger.svg" alt="">
+          <div class="nav__close" id="nav-close">
+            <i class="fi fi-rs-cross-small"></i>
           </div>
         </div>
-      </nav>
-    </header>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="shop.html" class="nav__link">Shop</a>
+          </li>
+          <li class="nav__item">
+            <a href="accounts.html" class="nav__link">My Account</a>
+          </li>
+          <li class="nav__item">
+            <a href="compare.html" class="nav__link">Compare</a>
+          </li>
 
-    <!--=============== MAIN ===============-->
-    <main class="main">
-      <!--=============== BREADCRUMB ===============-->
-      <section class="breadcrumb">
-        <ul class="breadcrumb__list flex container">
-          <li><a href="index.html" class="breadcrumb__link">Home</a></li>
-          <li><span class="breadcrumb__link"></span>></li>
-          <li><span class="breadcrumb__link">Shop</span></li>
+          <li class="nav__item" id="mobileLoginItem" style="display: none;">
+            <a href="login-register.html" class="nav__link">Login</a>
+          </li>
+
+          <li class="nav__item" id="mobileLogoutItem" style="display: none;">
+            <a href="#" class="nav__link">Logout</a>
+          </li>
         </ul>
-      </section>
 
-      <!--=============== PRODUCTS ===============-->
-      <section class="products container section--lg">
-        <p class="total__products">We found <span>688</span> items for you!</p>
-        <div class="products__container grid">
+        </ul>
+        <div class="header__search">
+          <input type="text" placeholder="Search For Items..." class="form__input" />
+          <button class="search__btn">
+            <img src="assets/img/search.png" alt="search icon" />
+          </button>
+        </div>
+      </div>
+      <div class="header__user-actions">
+        <a href="wishlist.html" class="header__action-btn" title="Wishlist">
+          <img src="assets/img/icon-heart.svg" alt="" />
+          <span class="count">3</span>
+        </a>
+        <a href="cart.html" class="header__action-btn" title="Cart">
+          <img src="assets/img/icon-cart.svg" alt="" />
+          <span class="count">3</span>
+        </a>
+        <div class="header__action-btn nav__toggle" id="nav-toggle">
+          <img src="./assets//img/menu-burger.svg" alt="">
+        </div>
+      </div>
+    </nav>
+  </header>
 
-          <div class="product__item">
-            <div class="product__banner">
-              <a href="details.html" class="product__images">
-                <img src="assets/img/Poco-1-1.png" alt="Poco X5 Pro Front" class="product__img default" />
-                <img src="assets/img/Poco-1-2.png" alt="Poco X5 Pro Back" class="product__img hover" />
-              </a>
-              <div class="product__actions">
-                <a href="#" class="action__btn" aria-label="Quick View"><i class="fi fi-rs-eye"></i></a>
-                <a href="#" class="action__btn" aria-label="Add to Wishlist"><i class="fi fi-rs-heart"></i></a>
-                <a href="#" class="action__btn" aria-label="Compare"><i class="fi fi-rs-shuffle"></i></a>
-              </div>
-              <div class="product__badge light-pink">Hot</div>
+  <!--=============== MAIN ===============-->
+  <main class="main">
+    <!--=============== BREADCRUMB ===============-->
+    <section class="breadcrumb">
+      <ul class="breadcrumb__list flex container">
+        <li><a href="index.html" class="breadcrumb__link">Home</a></li>
+        <li><span class="breadcrumb__link"></span>></li>
+        <li><span class="breadcrumb__link">Shop</span></li>
+      </ul>
+    </section>
+
+    <!--=============== PRODUCTS ===============-->
+    <section class="products container section--lg">
+      <p class="total__products">We found <span>688</span> items for you!</p>
+      <div class="products__container grid">
+
+        <div class="product__item">
+          <div class="product__banner">
+            <a href="pocox6pro.html" class="product__images">
+              <img src="assets/img/Phones/1.png" alt="Poco X6 Pro Front" class="product__img default" />
+              <img src="assets/img/Phones/2.png" alt="Poco X6 Pro Back" class="product__img hover" />
+            </a>
+            <div class="product__actions">
+              <a href="#" class="action__btn" aria-label="Quick View"><i class="fi fi-rs-eye"></i></a>
+              <a href="#" class="action__btn" aria-label="Add to Wishlist"><i class="fi fi-rs-heart"></i></a>
+              <a href="#" class="action__btn" aria-label="Compare"><i class="fi fi-rs-shuffle"></i></a>
             </div>
-            <div class="product__content">
-              <span class="product__category">Poco</span>
-              <a href="details.html">
-                <h3 class="product__title">Poco X5 Pro 5G 128GB</h3>
-              </a>
-              <div class="product__rating">
-                <i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i>
-              </div>
-              <div class="product__price flex">
-                <span class="new__price">₱16,999</span>
-                <span class="old__price">₱18,999</span>
-              </div>
-              <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
-                <i class="fi fi-rs-shopping-bag-add"></i>
-              </a>
-            </div>
+            <div class="product__badge light-pink">Hot</div>
           </div>
-          
-
-          <div class="product__item">
-            <div class="product__banner">
-              <a href="details.html" class="product__images">
-                <img
-                  src="assets/img/Poco-1-1.png"
-                  alt=""
-                  class="product__img default"
-                />
-                <img
-                src="assets/img/Poco-1-2.png"
-                  alt=""
-                  class="product__img hover"
-                />
-              </a>
-              <div class="product__actions">
-                <a href="#" class="action__btn" aria-label="Quick View">
-                  <i class="fi fi-rs-eye"></i>
-                </a>
-                <a
-                  href="#"
-                  class="action__btn"
-                  aria-label="Add to Wishlist"
-                >
-                  <i class="fi fi-rs-heart"></i>
-                </a>
-                <a href="#" class="action__btn" aria-label="Compare">
-                  <i class="fi fi-rs-shuffle"></i>
-                </a>
-              </div>
-              <div class="product__badge light-green">Hot</div>
+          <div class="product__content">
+            <span class="product__category">Poco</span>
+            <a href="details.html">
+              <h3 class="product__title">Poco X6 Pro 5G 128GB</h3>
+            </a>
+            <div class="product__rating">
+              <i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i
+                class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i>
             </div>
-
-            
-            <div class="product__content">
-              <span class="product__category">Redmi</span>
-              <a href="details.html">
-                <h3 class="product__title">Redmi Note 12 4G 128GB</h3>
-              </a>
-              <div class="product__rating">
-                <i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i>
-              </div>
-              <div class="product__price flex">
-                <span class="new__price">₱8,999</span>
-                <span class="old__price">₱10,999</span>
-              </div>
-              <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
-                <i class="fi fi-rs-shopping-bag-add"></i>
-              </a>
+            <div class="product__price flex">
+              <span class="new__price">₱16,999</span>
+              <span class="old__price">₱18,999</span>
             </div>
+            <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
+              <i class="fi fi-rs-shopping-bag-add"></i>
+            </a>
           </div>
+        </div>
 
-          <div class="product__item">
-            <div class="product__banner">
-              <a href="details.html" class="product__images">
-                <img
-                src="assets/img/Poco-1-1.png"
-                alt=""
-                  class="product__img default"
-                />
-                <img
-                src="assets/img/Poco-1-2.png"
-                alt=""
-                  class="product__img hover"
-                />
+
+        <div class="product__item">
+          <div class="product__banner">
+            <a href="redminote12.html" class="product__images">
+              <img src="assets/img/Phones/3.png" alt="" class="product__img default" />
+              <img src="assets/img/Phones/4.png" alt="" class="product__img hover" />
+            </a>
+            <div class="product__actions">
+              <a href="#" class="action__btn" aria-label="Quick View">
+                <i class="fi fi-rs-eye"></i>
               </a>
-              <div class="product__actions">
-                <a href="#" class="action__btn" aria-label="Quick View">
-                  <i class="fi fi-rs-eye"></i>
-                </a>
-                <a
-                  href="#"
-                  class="action__btn"
-                  aria-label="Add to Wishlist"
-                >
-                  <i class="fi fi-rs-heart"></i>
-                </a>
-                <a href="#" class="action__btn" aria-label="Compare">
-                  <i class="fi fi-rs-shuffle"></i>
-                </a>
-              </div>
-              <div class="product__badge light-orange">Hot</div>
-            </div>
-            <div class="product__content">
-              <span class="product__category">iPhone</span>
-              <a href="details.html">
-                <h3 class="product__title">iPhone 13 Mini 128GB</h3>
+              <a href="#" class="action__btn" aria-label="Add to Wishlist">
+                <i class="fi fi-rs-heart"></i>
               </a>
-              <div class="product__rating">
-                <i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i>
-              </div>
-              <div class="product__price flex">
-                <span class="new__price">₱44,990</span>
-                <span class="old__price">₱49,990</span>
-              </div>
-              <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
-                <i class="fi fi-rs-shopping-bag-add"></i>
+              <a href="#" class="action__btn" aria-label="Compare">
+                <i class="fi fi-rs-shuffle"></i>
               </a>
             </div>
+            <div class="product__badge light-green">Hot</div>
           </div>
 
-          <div class="product__item">
-            <div class="product__banner">
-              <a href="details.html" class="product__images">
-                <img
-                src="assets/img/Poco-1-1.png"
-                alt=""
-                  class="product__img default"
-                />
-                <img
-                src="assets/img/Poco-1-2.png"
-                alt=""
-                  class="product__img hover"
-                />
-              </a>
-              <div class="product__actions">
-                <a href="#" class="action__btn" aria-label="Quick View">
-                  <i class="fi fi-rs-eye"></i>
-                </a>
-                <a
-                  href="#"
-                  class="action__btn"
-                  aria-label="Add to Wishlist"
-                >
-                  <i class="fi fi-rs-heart"></i>
-                </a>
-                <a href="#" class="action__btn" aria-label="Compare">
-                  <i class="fi fi-rs-shuffle"></i>
-                </a>
-              </div>
-              <div class="product__badge light-blue">Hot</div>
-            </div>
-            <div class="product__content">
-              <span class="product__category">Samsung</span>
-              <a href="details.html">
-                <h3 class="product__title">Samsung Galaxy S23 256GB</h3>
-              </a>
-              <div class="product__rating">
-                <i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i>
-              </div>
-              <div class="product__price flex">
-                <span class="new__price">₱53,990</span>
-                <span class="old__price">₱58,990</span>
-              </div>
-              <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
-                <i class="fi fi-rs-shopping-bag-add"></i>
-              </a>
-            </div>     
-          </div>
 
-          <div class="product__item">
-            <div class="product__banner">
-              <a href="details.html" class="product__images">
-                <img
-                src="assets/img/Poco-1-1.png"
-                alt=""
-                  class="product__img default"
-                />
-                <img
-                src="assets/img/Poco-1-2.png"
-                alt=""
-                  class="product__img hover"
-                />
-              </a>
-              <div class="product__actions">
-                <a href="#" class="action__btn" aria-label="Quick View">
-                  <i class="fi fi-rs-eye"></i>
-                </a>
-                <a
-                  href="#"
-                  class="action__btn"
-                  aria-label="Add to Wishlist"
-                >
-                  <i class="fi fi-rs-heart"></i>
-                </a>
-                <a href="#" class="action__btn" aria-label="Compare">
-                  <i class="fi fi-rs-shuffle"></i>
-                </a>
-              </div>
-              <div class="product__badge light-blue">-30%</div>
+          <div class="product__content">
+            <span class="product__category">Redmi</span>
+            <a href="details.html">
+              <h3 class="product__title">Redmi Note 12 4G 128GB</h3>
+            </a>
+            <div class="product__rating">
+              <i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i
+                class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i>
             </div>
-            <div class="product__content">
-              <span class="product__category">Huawei</span>
-              <a href="details.html">
-                <h3 class="product__title">Huawei Nova 11i 128GB</h3>
-              </a>
-              <div class="product__rating">
-                <i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i>
-              </div>
-              <div class="product__price flex">
-                <span class="new__price">₱9,999</span>
-                <span class="old__price">₱11,999</span>
-              </div>
-              <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
-                <i class="fi fi-rs-shopping-bag-add"></i>
-              </a>
+            <div class="product__price flex">
+              <span class="new__price">₱8,999</span>
+              <span class="old__price">₱10,999</span>
             </div>
+            <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
+              <i class="fi fi-rs-shopping-bag-add"></i>
+            </a>
           </div>
+        </div>
 
-          <div class="product__item">
-            <div class="product__banner">
-              <a href="details.html" class="product__images">
-                <img
-                src="assets/img/Poco-1-1.png"
-                alt=""
-                  class="product__img default"
-                />
-                <img
-                src="assets/img/Poco-1-2.png"
-                alt=""
-                  class="product__img hover"
-                />
+        <div class="product__item">
+          <div class="product__banner">
+            <a href="iphone13mini.html" class="product__images">
+              <img src="assets/img/Phones/5.png" alt="" class="product__img default" />
+              <img src="assets/img/Phones/6.png" alt="" class="product__img hover" />
+            </a>
+            <div class="product__actions">
+              <a href="#" class="action__btn" aria-label="Quick View">
+                <i class="fi fi-rs-eye"></i>
               </a>
-              <div class="product__actions">
-                <a href="#" class="action__btn" aria-label="Quick View">
-                  <i class="fi fi-rs-eye"></i>
-                </a>
-                <a
-                  href="#"
-                  class="action__btn"
-                  aria-label="Add to Wishlist"
-                >
-                  <i class="fi fi-rs-heart"></i>
-                </a>
-                <a href="#" class="action__btn" aria-label="Compare">
-                  <i class="fi fi-rs-shuffle"></i>
-                </a>
-              </div>
-              <div class="product__badge light-blue">-22%</div>
-            </div>
-            <div class="product__content">
-              <span class="product__category">Realme</span>
-              <a href="details.html">
-                <h3 class="product__title">Realme C55 6GB+128GB</h3>
+              <a href="#" class="action__btn" aria-label="Add to Wishlist">
+                <i class="fi fi-rs-heart"></i>
               </a>
-              <div class="product__rating">
-                <i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i>
-              </div>
-              <div class="product__price flex">
-                <span class="new__price">₱7,999</span>
-                <span class="old__price">₱9,499</span>
-              </div>
-              <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
-                <i class="fi fi-rs-shopping-bag-add"></i>
+              <a href="#" class="action__btn" aria-label="Compare">
+                <i class="fi fi-rs-shuffle"></i>
               </a>
             </div>
-            
+            <div class="product__badge light-orange">Hot</div>
           </div>
+          <div class="product__content">
+            <span class="product__category">iPhone</span>
+            <a href="details.html">
+              <h3 class="product__title">iPhone 13 Mini 128GB</h3>
+            </a>
+            <div class="product__rating">
+              <i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i
+                class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i>
+            </div>
+            <div class="product__price flex">
+              <span class="new__price">₱44,990</span>
+              <span class="old__price">₱49,990</span>
+            </div>
+            <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
+              <i class="fi fi-rs-shopping-bag-add"></i>
+            </a>
+          </div>
+        </div>
 
-          <div class="product__item">
-            <div class="product__banner">
-              <a href="details.html" class="product__images">
-                <img
-                src="assets/img/Poco-1-1.png"
-                alt=""
-                  class="product__img default"
-                />
-                <img
-                src="assets/img/Poco-1-2.png"
-                alt=""
-                  class="product__img hover"
-                />
+        <div class="product__item">
+          <div class="product__banner">
+            <a href="samsungS23.html" class="product__images">
+              <img src="assets/img/Phones/7.png" alt="" class="product__img default" />
+              <img src="assets/img/Phones/8.png" alt="" class="product__img hover" />
+            </a>
+            <div class="product__actions">
+              <a href="#" class="action__btn" aria-label="Quick View">
+                <i class="fi fi-rs-eye"></i>
               </a>
-              <div class="product__actions">
-                <a href="#" class="action__btn" aria-label="Quick View">
-                  <i class="fi fi-rs-eye"></i>
-                </a>
-                <a
-                  href="#"
-                  class="action__btn"
-                  aria-label="Add to Wishlist"
-                >
-                  <i class="fi fi-rs-heart"></i>
-                </a>
-                <a href="#" class="action__btn" aria-label="Compare">
-                  <i class="fi fi-rs-shuffle"></i>
-                </a>
-              </div>
-              <div class="product__badge light-green">-22%</div>
-            </div>
-            <div class="product__content">
-              <span class="product__category">OnePlus</span>
-              <a href="details.html">
-                <h3 class="product__title">OnePlus Nord CE 3 Lite 5G</h3>
+              <a href="#" class="action__btn" aria-label="Add to Wishlist">
+                <i class="fi fi-rs-heart"></i>
               </a>
-              <div class="product__rating">
-                <i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i>
-              </div>
-              <div class="product__price flex">
-                <span class="new__price">₱12,999</span>
-                <span class="old__price">₱14,999</span>
-              </div>
-              <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
-                <i class="fi fi-rs-shopping-bag-add"></i>
+              <a href="#" class="action__btn" aria-label="Compare">
+                <i class="fi fi-rs-shuffle"></i>
               </a>
             </div>
+            <div class="product__badge light-blue">Hot</div>
           </div>
+          <div class="product__content">
+            <span class="product__category">Samsung</span>
+            <a href="details.html">
+              <h3 class="product__title">Samsung Galaxy S23 256GB</h3>
+            </a>
+            <div class="product__rating">
+              <i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i
+                class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i>
+            </div>
+            <div class="product__price flex">
+              <span class="new__price">₱53,990</span>
+              <span class="old__price">₱58,990</span>
+            </div>
+            <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
+              <i class="fi fi-rs-shopping-bag-add"></i>
+            </a>
+          </div>
+        </div>
 
-          <div class="product__item">
-            <div class="product__banner">
-              <a href="details.html" class="product__images">
-                <img
-                src="assets/img/Poco-1-1.png"
-                alt=""
-                  class="product__img default"
-                />
-                <img
-                src="assets/img/Poco-1-2.png"
-                alt=""
-                  class="product__img hover"
-                />
+        <div class="product__item">
+          <div class="product__banner">
+            <a href="huaweiNova11i.html" class="product__images">
+              <img src="assets/img/Phones/9.png" alt="" class="product__img default" />
+              <img src="assets/img/Phones/10.png" alt="" class="product__img hover" />
+            </a>
+            <div class="product__actions">
+              <a href="#" class="action__btn" aria-label="Quick View">
+                <i class="fi fi-rs-eye"></i>
               </a>
-              <div class="product__actions">
-                <a href="#" class="action__btn" aria-label="Quick View">
-                  <i class="fi fi-rs-eye"></i>
-                </a>
-                <a
-                  href="#"
-                  class="action__btn"
-                  aria-label="Add to Wishlist"
-                >
-                  <i class="fi fi-rs-heart"></i>
-                </a>
-                <a href="#" class="action__btn" aria-label="Compare">
-                  <i class="fi fi-rs-shuffle"></i>
-                </a>
-              </div>
-            </div>
-            <div class="product__content">
-              <span class="product__category">Xiaomi</span>
-              <a href="details.html">
-                <h3 class="product__title">Xiaomi 13T Pro 256GB</h3>
+              <a href="#" class="action__btn" aria-label="Add to Wishlist">
+                <i class="fi fi-rs-heart"></i>
               </a>
-              <div class="product__rating">
-                <i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i>
-              </div>
-              <div class="product__price flex">
-                <span class="new__price">₱38,999</span>
-                <span class="old__price">₱42,990</span>
-              </div>
-              <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
-                <i class="fi fi-rs-shopping-bag-add"></i>
+              <a href="#" class="action__btn" aria-label="Compare">
+                <i class="fi fi-rs-shuffle"></i>
               </a>
             </div>
+            <div class="product__badge light-blue">-30%</div>
           </div>
-          <div class="product__item">
-            <div class="product__banner">
-              <a href="details.html" class="product__images">
-                <img src="assets/img/Poco-1-1.png" alt="Poco X5 Pro Front" class="product__img default" />
-                <img src="assets/img/Poco-1-2.png" alt="Poco X5 Pro Back" class="product__img hover" />
-              </a>
-              <div class="product__actions">
-                <a href="#" class="action__btn" aria-label="Quick View"><i class="fi fi-rs-eye"></i></a>
-                <a href="#" class="action__btn" aria-label="Add to Wishlist"><i class="fi fi-rs-heart"></i></a>
-                <a href="#" class="action__btn" aria-label="Compare"><i class="fi fi-rs-shuffle"></i></a>
-              </div>
-              <div class="product__badge light-pink">Hot</div>
+          <div class="product__content">
+            <span class="product__category">Huawei</span>
+            <a href="details.html">
+              <h3 class="product__title">Huawei Nova 11i 128GB</h3>
+            </a>
+            <div class="product__rating">
+              <i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i
+                class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i>
             </div>
-            <div class="product__content">
-              <span class="product__category">Poco</span>
-              <a href="details.html">
-                <h3 class="product__title">Poco X5 Pro 5G 128GB</h3>
-              </a>
-              <div class="product__rating">
-                <i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i>
-              </div>
-              <div class="product__price flex">
-                <span class="new__price">₱16,999</span>
-                <span class="old__price">₱18,999</span>
-              </div>
-              <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
-                <i class="fi fi-rs-shopping-bag-add"></i>
-              </a>
+            <div class="product__price flex">
+              <span class="new__price">₱9,999</span>
+              <span class="old__price">₱11,999</span>
             </div>
+            <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
+              <i class="fi fi-rs-shopping-bag-add"></i>
+            </a>
           </div>
-          
+        </div>
 
-          <div class="product__item">
-            <div class="product__banner">
-              <a href="details.html" class="product__images">
-                <img
-                  src="assets/img/Poco-1-1.png"
-                  alt=""
-                  class="product__img default"
-                />
-                <img
-                src="assets/img/Poco-1-2.png"
-                  alt=""
-                  class="product__img hover"
-                />
+        <div class="product__item">
+          <div class="product__banner">
+            <a href="realmeC55.html" class="product__images">
+              <img src="assets/img/Phones/11.png" alt="" class="product__img default" />
+              <img src="assets/img/Phones/12.png" alt="" class="product__img hover" />
+            </a>
+            <div class="product__actions">
+              <a href="#" class="action__btn" aria-label="Quick View">
+                <i class="fi fi-rs-eye"></i>
               </a>
-              <div class="product__actions">
-                <a href="#" class="action__btn" aria-label="Quick View">
-                  <i class="fi fi-rs-eye"></i>
-                </a>
-                <a
-                  href="#"
-                  class="action__btn"
-                  aria-label="Add to Wishlist"
-                >
-                  <i class="fi fi-rs-heart"></i>
-                </a>
-                <a href="#" class="action__btn" aria-label="Compare">
-                  <i class="fi fi-rs-shuffle"></i>
-                </a>
-              </div>
-              <div class="product__badge light-green">Hot</div>
-            </div>
-
-            
-            <div class="product__content">
-              <span class="product__category">Redmi</span>
-              <a href="details.html">
-                <h3 class="product__title">Redmi Note 12 4G 128GB</h3>
+              <a href="#" class="action__btn" aria-label="Add to Wishlist">
+                <i class="fi fi-rs-heart"></i>
               </a>
-              <div class="product__rating">
-                <i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i>
-              </div>
-              <div class="product__price flex">
-                <span class="new__price">₱8,999</span>
-                <span class="old__price">₱10,999</span>
-              </div>
-              <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
-                <i class="fi fi-rs-shopping-bag-add"></i>
+              <a href="#" class="action__btn" aria-label="Compare">
+                <i class="fi fi-rs-shuffle"></i>
               </a>
             </div>
+            <div class="product__badge light-blue">-22%</div>
           </div>
-
-          <div class="product__item">
-            <div class="product__banner">
-              <a href="details.html" class="product__images">
-                <img
-                src="assets/img/Poco-1-1.png"
-                alt=""
-                  class="product__img default"
-                />
-                <img
-                src="assets/img/Poco-1-2.png"
-                alt=""
-                  class="product__img hover"
-                />
-              </a>
-              <div class="product__actions">
-                <a href="#" class="action__btn" aria-label="Quick View">
-                  <i class="fi fi-rs-eye"></i>
-                </a>
-                <a
-                  href="#"
-                  class="action__btn"
-                  aria-label="Add to Wishlist"
-                >
-                  <i class="fi fi-rs-heart"></i>
-                </a>
-                <a href="#" class="action__btn" aria-label="Compare">
-                  <i class="fi fi-rs-shuffle"></i>
-                </a>
-              </div>
-              <div class="product__badge light-orange">Hot</div>
+          <div class="product__content">
+            <span class="product__category">Realme</span>
+            <a href="details.html">
+              <h3 class="product__title">Realme C55 6GB+128GB</h3>
+            </a>
+            <div class="product__rating">
+              <i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i
+                class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i>
             </div>
-            <div class="product__content">
-              <span class="product__category">iPhone</span>
-              <a href="details.html">
-                <h3 class="product__title">iPhone 13 Mini 128GB</h3>
-              </a>
-              <div class="product__rating">
-                <i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i>
-              </div>
-              <div class="product__price flex">
-                <span class="new__price">₱44,990</span>
-                <span class="old__price">₱49,990</span>
-              </div>
-              <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
-                <i class="fi fi-rs-shopping-bag-add"></i>
-              </a>
+            <div class="product__price flex">
+              <span class="new__price">₱7,999</span>
+              <span class="old__price">₱9,499</span>
             </div>
-          </div>
-
-          <div class="product__item">
-            <div class="product__banner">
-              <a href="details.html" class="product__images">
-                <img
-                src="assets/img/Poco-1-1.png"
-                alt=""
-                  class="product__img default"
-                />
-                <img
-                src="assets/img/Poco-1-2.png"
-                alt=""
-                  class="product__img hover"
-                />
-              </a>
-              <div class="product__actions">
-                <a href="#" class="action__btn" aria-label="Quick View">
-                  <i class="fi fi-rs-eye"></i>
-                </a>
-                <a
-                  href="#"
-                  class="action__btn"
-                  aria-label="Add to Wishlist"
-                >
-                  <i class="fi fi-rs-heart"></i>
-                </a>
-                <a href="#" class="action__btn" aria-label="Compare">
-                  <i class="fi fi-rs-shuffle"></i>
-                </a>
-              </div>
-              <div class="product__badge light-blue">Hot</div>
-            </div>
-            <div class="product__content">
-              <span class="product__category">Samsung</span>
-              <a href="details.html">
-                <h3 class="product__title">Samsung Galaxy S23 256GB</h3>
-              </a>
-              <div class="product__rating">
-                <i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i>
-              </div>
-              <div class="product__price flex">
-                <span class="new__price">₱53,990</span>
-                <span class="old__price">₱58,990</span>
-              </div>
-              <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
-                <i class="fi fi-rs-shopping-bag-add"></i>
-              </a>
-            </div>     
-          </div>
-
-          <div class="product__item">
-            <div class="product__banner">
-              <a href="details.html" class="product__images">
-                <img
-                src="assets/img/Poco-1-1.png"
-                alt=""
-                  class="product__img default"
-                />
-                <img
-                src="assets/img/Poco-1-2.png"
-                alt=""
-                  class="product__img hover"
-                />
-              </a>
-              <div class="product__actions">
-                <a href="#" class="action__btn" aria-label="Quick View">
-                  <i class="fi fi-rs-eye"></i>
-                </a>
-                <a
-                  href="#"
-                  class="action__btn"
-                  aria-label="Add to Wishlist"
-                >
-                  <i class="fi fi-rs-heart"></i>
-                </a>
-                <a href="#" class="action__btn" aria-label="Compare">
-                  <i class="fi fi-rs-shuffle"></i>
-                </a>
-              </div>
-              <div class="product__badge light-blue">-30%</div>
-            </div>
-            <div class="product__content">
-              <span class="product__category">Huawei</span>
-              <a href="details.html">
-                <h3 class="product__title">Huawei Nova 11i 128GB</h3>
-              </a>
-              <div class="product__rating">
-                <i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i>
-              </div>
-              <div class="product__price flex">
-                <span class="new__price">₱9,999</span>
-                <span class="old__price">₱11,999</span>
-              </div>
-              <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
-                <i class="fi fi-rs-shopping-bag-add"></i>
-              </a>
-            </div>
-          </div>
-
-          <div class="product__item">
-            <div class="product__banner">
-              <a href="details.html" class="product__images">
-                <img
-                src="assets/img/Poco-1-1.png"
-                alt=""
-                  class="product__img default"
-                />
-                <img
-                src="assets/img/Poco-1-2.png"
-                alt=""
-                  class="product__img hover"
-                />
-              </a>
-              <div class="product__actions">
-                <a href="#" class="action__btn" aria-label="Quick View">
-                  <i class="fi fi-rs-eye"></i>
-                </a>
-                <a
-                  href="#"
-                  class="action__btn"
-                  aria-label="Add to Wishlist"
-                >
-                  <i class="fi fi-rs-heart"></i>
-                </a>
-                <a href="#" class="action__btn" aria-label="Compare">
-                  <i class="fi fi-rs-shuffle"></i>
-                </a>
-              </div>
-              <div class="product__badge light-blue">-22%</div>
-            </div>
-            <div class="product__content">
-              <span class="product__category">Realme</span>
-              <a href="details.html">
-                <h3 class="product__title">Realme C55 6GB+128GB</h3>
-              </a>
-              <div class="product__rating">
-                <i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i>
-              </div>
-              <div class="product__price flex">
-                <span class="new__price">₱7,999</span>
-                <span class="old__price">₱9,499</span>
-              </div>
-              <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
-                <i class="fi fi-rs-shopping-bag-add"></i>
-              </a>
-            </div>
-            
-          </div>
-
-          <div class="product__item">
-            <div class="product__banner">
-              <a href="details.html" class="product__images">
-                <img
-                src="assets/img/Poco-1-1.png"
-                alt=""
-                  class="product__img default"
-                />
-                <img
-                src="assets/img/Poco-1-2.png"
-                alt=""
-                  class="product__img hover"
-                />
-              </a>
-              <div class="product__actions">
-                <a href="#" class="action__btn" aria-label="Quick View">
-                  <i class="fi fi-rs-eye"></i>
-                </a>
-                <a
-                  href="#"
-                  class="action__btn"
-                  aria-label="Add to Wishlist"
-                >
-                  <i class="fi fi-rs-heart"></i>
-                </a>
-                <a href="#" class="action__btn" aria-label="Compare">
-                  <i class="fi fi-rs-shuffle"></i>
-                </a>
-              </div>
-              <div class="product__badge light-green">-22%</div>
-            </div>
-            <div class="product__content">
-              <span class="product__category">OnePlus</span>
-              <a href="details.html">
-                <h3 class="product__title">OnePlus Nord CE 3 Lite 5G</h3>
-              </a>
-              <div class="product__rating">
-                <i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i>
-              </div>
-              <div class="product__price flex">
-                <span class="new__price">₱12,999</span>
-                <span class="old__price">₱14,999</span>
-              </div>
-              <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
-                <i class="fi fi-rs-shopping-bag-add"></i>
-              </a>
-            </div>
-          </div>
+            <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
+              <i class="fi fi-rs-shopping-bag-add"></i>
+            </a>
           </div>
 
         </div>
-        <ul class="pagination">
-          <li><a href="#" class="pagination__link active">01</a></li>
-          <li><a href="#" class="pagination__link">02</a></li>
-          <li><a href="#" class="pagination__link">03</a></li>
-          <li><a href="#" class="pagination__link">...</a></li>
-          <li><a href="#" class="pagination__link">16</a></li>
-          <li><a href="#" class="pagination__link icon">
+
+        <div class="product__item">
+          <div class="product__banner">
+            <a href="onePlus13.html" class="product__images">
+              <img src="assets/img/Phones/13.png" alt="" class="product__img default" />
+              <img src="assets/img/Phones/14.png" alt="" class="product__img hover" />
+            </a>
+            <div class="product__actions">
+              <a href="#" class="action__btn" aria-label="Quick View">
+                <i class="fi fi-rs-eye"></i>
+              </a>
+              <a href="#" class="action__btn" aria-label="Add to Wishlist">
+                <i class="fi fi-rs-heart"></i>
+              </a>
+              <a href="#" class="action__btn" aria-label="Compare">
+                <i class="fi fi-rs-shuffle"></i>
+              </a>
+            </div>
+            <div class="product__badge light-green">-22%</div>
+          </div>
+          <div class="product__content">
+            <span class="product__category">OnePlus</span>
+            <a href="details.html">
+              <h3 class="product__title">OnePlus 135G</h3>
+            </a>
+            <div class="product__rating">
+              <i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i
+                class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i>
+            </div>
+            <div class="product__price flex">
+              <span class="new__price">₱12,999</span>
+              <span class="old__price">₱14,999</span>
+            </div>
+            <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
+              <i class="fi fi-rs-shopping-bag-add"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="product__item">
+          <div class="product__banner">
+            <a href="xiaomi13T.html" class="product__images">
+              <img src="assets/img/Phones/15.png" alt="" class="product__img default" />
+              <img src="assets/img/Phones/16.png" alt="" class="product__img hover" />
+            </a>
+            <div class="product__actions">
+              <a href="#" class="action__btn" aria-label="Quick View">
+                <i class="fi fi-rs-eye"></i>
+              </a>
+              <a href="#" class="action__btn" aria-label="Add to Wishlist">
+                <i class="fi fi-rs-heart"></i>
+              </a>
+              <a href="#" class="action__btn" aria-label="Compare">
+                <i class="fi fi-rs-shuffle"></i>
+              </a>
+            </div>
+          </div>
+          <div class="product__content">
+            <span class="product__category">Xiaomi</span>
+            <a href="details.html">
+              <h3 class="product__title">Xiaomi 13T Pro 256GB</h3>
+            </a>
+            <div class="product__rating">
+              <i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i
+                class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i>
+            </div>
+            <div class="product__price flex">
+              <span class="new__price">₱38,999</span>
+              <span class="old__price">₱42,990</span>
+            </div>
+            <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
+              <i class="fi fi-rs-shopping-bag-add"></i>
+            </a>
+          </div>
+        </div>
+        <!-- Phone 4: Xiaomi -->
+        <div class="product__item">
+          <div class="product__banner">
+            <a href="xiaomiNote13.html" class="product__images">
+              <img src="assets/img/Phones/17.png" alt="Xiaomi Redmi Note 13 Front" class="product__img default" />
+              <img src="assets/img/Phones/18.png" alt="Xiaomi Redmi Note 13 Back" class="product__img hover" />
+            </a>
+            <div class="product__actions">
+              <a href="#" class="action__btn" aria-label="Quick View"><i class="fi fi-rs-eye"></i></a>
+              <a href="#" class="action__btn" aria-label="Add to Wishlist"><i class="fi fi-rs-heart"></i></a>
+              <a href="#" class="action__btn" aria-label="Compare"><i class="fi fi-rs-shuffle"></i></a>
+            </div>
+            <div class="product__badge light-blue">Hot</div>
+          </div>
+          <div class="product__content">
+            <span class="product__category">Xiaomi</span>
+            <a href="details.html">
+              <h3 class="product__title">Xiaomi Redmi Note 13 8GB+256GB</h3>
+            </a>
+            <div class="product__rating">
+              <i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i
+                class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i>
+            </div>
+            <div class="product__price flex">
+              <span class="new__price">₱12,990</span>
+              <span class="old__price">₱14,990</span>
+            </div>
+            <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
+              <i class="fi fi-rs-shopping-bag-add"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Phone 5: Realme -->
+        <div class="product__item">
+          <div class="product__banner">
+            <a href="huaweiPura70.html" class="product__images">
+              <img src="assets/img/Phones/19.png" alt="Realme Narzo 60 Front" class="product__img default" />
+              <img src="assets/img/Phones/20.png" alt="Realme Narzo 60 Back" class="product__img hover" />
+            </a>
+            <div class="product__actions">
+              <a href="#" class="action__btn" aria-label="Quick View"><i class="fi fi-rs-eye"></i></a>
+              <a href="#" class="action__btn" aria-label="Add to Wishlist"><i class="fi fi-rs-heart"></i></a>
+              <a href="#" class="action__btn" aria-label="Compare"><i class="fi fi-rs-shuffle"></i></a>
+            </div>
+            <div class="product__badge light-blue">-30%</div>
+          </div>
+          <div class="product__content">
+            <span class="product__category">Huawei</span>
+            <a href="details.html">
+              <h3 class="product__title">Huawei Pura 70 Ultra 5G 128GB</h3>
+            </a>
+            <div class="product__rating">
+              <i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i
+                class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i>
+            </div>
+            <div class="product__price flex">
+              <span class="new__price">₱10,299</span>
+              <span class="old__price">₱12,999</span>
+            </div>
+            <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
+              <i class="fi fi-rs-shopping-bag-add"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Phone 6: Huawei -->
+        <div class="product__item">
+          <div class="product__banner">
+            <a href="huaweiP60.html" class="product__images">
+              <img src="assets/img/Phones/21.png" alt="Huawei P60 Pro Front" class="product__img default" />
+              <img src="assets/img/Phones/22.png" alt="Huawei P60 Pro Back" class="product__img hover" />
+            </a>
+            <div class="product__actions">
+              <a href="#" class="action__btn" aria-label="Quick View"><i class="fi fi-rs-eye"></i></a>
+              <a href="#" class="action__btn" aria-label="Add to Wishlist"><i class="fi fi-rs-heart"></i></a>
+              <a href="#" class="action__btn" aria-label="Compare"><i class="fi fi-rs-shuffle"></i></a>
+            </div>
+            <div class="product__badge light-green">-22%</div>
+          </div>
+          <div class="product__content">
+            <span class="product__category">Huawei</span>
+            <a href="details.html">
+              <h3 class="product__title">Huawei P60 Pro 256GB</h3>
+            </a>
+            <div class="product__rating">
+              <i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i
+                class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i>
+            </div>
+            <div class="product__price flex">
+              <span class="new__price">₱47,990</span>
+              <span class="old__price">₱54,990</span>
+            </div>
+            <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
+              <i class="fi fi-rs-shopping-bag-add"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Phone 7: Samsung -->
+        <div class="product__item">
+          <div class="product__banner">
+            <a href="samsungA25.html" class="product__images">
+              <img src="assets/img/Phones/23.png" alt="Samsung Galaxy A25 Front" class="product__img default" />
+              <img src="assets/img/Phones/24.png" alt="Samsung Galaxy A25 Back" class="product__img hover" />
+            </a>
+            <div class="product__actions">
+              <a href="#" class="action__btn" aria-label="Quick View"><i class="fi fi-rs-eye"></i></a>
+              <a href="#" class="action__btn" aria-label="Add to Wishlist"><i class="fi fi-rs-heart"></i></a>
+              <a href="#" class="action__btn" aria-label="Compare"><i class="fi fi-rs-shuffle"></i></a>
+            </div>
+          </div>
+          <div class="product__content">
+            <span class="product__category">Samsung</span>
+            <a href="details.html">
+              <h3 class="product__title">Samsung Galaxy A25 5G 128GB</h3>
+            </a>
+            <div class="product__rating">
+              <i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i
+                class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i>
+            </div>
+            <div class="product__price flex">
+              <span class="new__price">₱13,990</span>
+              <span class="old__price">₱15,990</span>
+            </div>
+            <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
+              <i class="fi fi-rs-shopping-bag-add"></i>
+            </a>
+          </div>
+        </div>
+        <!-- Phone 8: OnePlus -->
+        <div class="product__item">
+          <div class="product__banner">
+            <a href="onePlus13T.html" class="product__images">
+              <img src="assets/img/Phones/25.png" alt="OnePlus 11R Front" class="product__img default" />
+              <img src="assets/img/Phones/26.png" alt="OnePlus 11R Back" class="product__img hover" />
+            </a>
+            <div class="product__actions">
+              <a href="#" class="action__btn" aria-label="Quick View"><i class="fi fi-rs-eye"></i></a>
+              <a href="#" class="action__btn" aria-label="Add to Wishlist"><i class="fi fi-rs-heart"></i></a>
+              <a href="#" class="action__btn" aria-label="Compare"><i class="fi fi-rs-shuffle"></i></a>
+            </div>
+            <div class="product__badge light-orange">Hot</div>
+          </div>
+          <div class="product__content">
+            <span class="product__category">OnePlus</span>
+            <a href="details.html">
+              <h3 class="product__title">OnePlus 13T 5G 256GB</h3>
+            </a>
+            <div class="product__rating">
+              <i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i
+                class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i>
+            </div>
+            <div class="product__price flex">
+              <span class="new__price">₱29,999</span>
+              <span class="old__price">₱34,999</span>
+            </div>
+            <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
+              <i class="fi fi-rs-shopping-bag-add"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Phone 9: Apple -->
+        <div class="product__item">
+          <div class="product__banner">
+            <a href="iphone14.html" class="product__images">
+              <img src="assets/img/Phones/27.png" alt="iPhone 14 Front" class="product__img default" />
+              <img src="assets/img/Phones/28.png" alt="iPhone 14 Back" class="product__img hover" />
+            </a>
+            <div class="product__actions">
+              <a href="#" class="action__btn" aria-label="Quick View"><i class="fi fi-rs-eye"></i></a>
+              <a href="#" class="action__btn" aria-label="Add to Wishlist"><i class="fi fi-rs-heart"></i></a>
+              <a href="#" class="action__btn" aria-label="Compare"><i class="fi fi-rs-shuffle"></i></a>
+            </div>
+            <div class="product__badge light-blue">-10%</div>
+          </div>
+          <div class="product__content">
+            <span class="product__category">Apple</span>
+            <a href="details.html">
+              <h3 class="product__title">iPhone 14 128GB</h3>
+            </a>
+            <div class="product__rating">
+              <i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i
+                class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i>
+            </div>
+            <div class="product__price flex">
+              <span class="new__price">₱53,990</span>
+              <span class="old__price">₱59,990</span>
+            </div>
+            <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
+              <i class="fi fi-rs-shopping-bag-add"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Phone 10: Infinix -->
+        <div class="product__item">
+          <div class="product__banner">
+            <a href="infinixnote40.html" class="product__images">
+              <img src="assets/img/Phones/29.png" alt="Infinix Note 40 Pro Front" class="product__img default" />
+              <img src="assets/img/Phones/30.png" alt="Infinix Note 40 Pro Back" class="product__img hover" />
+            </a>
+            <div class="product__actions">
+              <a href="#" class="action__btn" aria-label="Quick View"><i class="fi fi-rs-eye"></i></a>
+              <a href="#" class="action__btn" aria-label="Add to Wishlist"><i class="fi fi-rs-heart"></i></a>
+              <a href="#" class="action__btn" aria-label="Compare"><i class="fi fi-rs-shuffle"></i></a>
+            </div>
+            <div class="product__badge light-green">Hot</div>
+          </div>
+          <div class="product__content">
+            <span class="product__category">Infinix</span>
+            <a href="details.html">
+              <h3 class="product__title">Infinix Note 40 Pro 256GB</h3>
+            </a>
+            <div class="product__rating">
+              <i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i
+                class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i>
+            </div>
+            <div class="product__price flex">
+              <span class="new__price">₱11,999</span>
+              <span class="old__price">₱13,999</span>
+            </div>
+            <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
+              <i class="fi fi-rs-shopping-bag-add"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Phone 11: Poco -->
+        <div class="product__item">
+          <div class="product__banner">
+            <a href="pocof5pro.html" class="product__images">
+              <img src="assets/img/Phones/31.png" alt="Poco F5 Front" class="product__img default" />
+              <img src="assets/img/Phones/32.png" alt="Poco F5 Back" class="product__img hover" />
+            </a>
+            <div class="product__actions">
+              <a href="#" class="action__btn" aria-label="Quick View"><i class="fi fi-rs-eye"></i></a>
+              <a href="#" class="action__btn" aria-label="Add to Wishlist"><i class="fi fi-rs-heart"></i></a>
+              <a href="#" class="action__btn" aria-label="Compare"><i class="fi fi-rs-shuffle"></i></a>
+            </div>
+            <div class="product__badge light-pink">-20%</div>
+          </div>
+          <div class="product__content">
+            <span class="product__category">Poco</span>
+            <a href="details.html">
+              <h3 class="product__title">Poco F5 5G 256GB</h3>
+            </a>
+            <div class="product__rating">
+              <i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i
+                class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i>
+            </div>
+            <div class="product__price flex">
+              <span class="new__price">₱20,490</span>
+              <span class="old__price">₱25,590</span>
+            </div>
+            <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
+              <i class="fi fi-rs-shopping-bag-add"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      </div>
+      <ul class="pagination">
+        <li><a href="#" class="pagination__link active">01</a></li>
+        <li><a href="#" class="pagination__link">02</a></li>
+        <li><a href="#" class="pagination__link">03</a></li>
+        <li><a href="#" class="pagination__link">...</a></li>
+        <li><a href="#" class="pagination__link">16</a></li>
+        <li><a href="#" class="pagination__link icon">
             <i class="fi-rs-angle-double-small-right"></i>
           </a></li>
-        </ul>
-      </section>
+      </ul>
+    </section>
 
-      <!--=============== NEWSLETTER ===============-->
-      <section class="newsletter section">
-        <div class="newsletter__container container grid">
-          <h3 class="newsletter__title flex">
-            <img
-              src="./assets/img/icon-email.svg"
-              alt=""
-              class="newsletter__icon"
-            />
-            Sign in to Newsletter
-          </h3>
-          <p class="newsletter__description">
-            ...and receive ₱1,500 voucher for first shopping.
-          </p>
-          <form action="" class="newsletter__form">
-            <input
-              type="text"
-              placeholder="Enter Your Email"
-              class="newsletter__input"
-            />
-            <button type="submit" class="newsletter__btn">Subscribe</button>
-          </form>
-        </div>
-      </section>
-    </main>
+    <!--=============== NEWSLETTER ===============-->
+    <section class="newsletter section">
+      <div class="newsletter__container container grid">
+        <h3 class="newsletter__title flex">
+          <img src="./assets/img/icon-email.svg" alt="" class="newsletter__icon" />
+          Sign in to Newsletter
+        </h3>
+        <p class="newsletter__description">
+          ...and receive ₱1,500 voucher for first shopping.
+        </p>
+        <form action="" class="newsletter__form">
+          <input type="text" placeholder="Enter Your Email" class="newsletter__input" />
+          <button type="submit" class="newsletter__btn">Subscribe</button>
+        </form>
+      </div>
+    </section>
+  </main>
 
-    <!--=============== FOOTER ===============-->
+  <!--=============== FOOTER ===============-->
   <footer class="footer container">
     <div class="footer__container grid">
-  
+
       <div class="footer__content">
         <a href="index.html" class="footer__logo">
           <img src="./assets/img/logo.svg" alt="Soppix logo" class="footer__logo-img" />
@@ -901,7 +740,7 @@
           </div>
         </div>
       </div>
-  
+
       <div class="footer__content">
         <h3 class="footer__title">About</h3>
         <ul class="footer__links">
@@ -913,7 +752,7 @@
           <li><a href="supportcenter.html" class="footer__link">Support Center</a></li>
         </ul>
       </div>
-  
+
       <div class="footer__content">
         <h3 class="footer__title">My Account</h3>
         <ul class="footer__links">
@@ -925,14 +764,14 @@
           <li><a href="#" class="footer__link">Order</a></li>
         </ul>
       </div>
-  
+
       <div class="footer__content">
         <h3 class="footer__title">Secured Payment Gateways</h3>
         <img src="./assets/img/payment-method.png" alt="Payment Methods" class="payment__img" />
       </div>
-  
+
     </div>
-  
+
     <div class="footer__bottom">
       <p class="copyright">
         &copy; 2025 <strong>Shoppix</strong>. All rights reserved.
@@ -948,4 +787,5 @@
   <script src="assets/js/main.js"></script>
 
 </body>
+
 </html>

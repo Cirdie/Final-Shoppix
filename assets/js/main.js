@@ -231,6 +231,7 @@ function updateHeaderBasedOnLogin() {
 
 document.addEventListener("DOMContentLoaded", updateHeaderBasedOnLogin);
 
+// ✅ MOBILE AUTH LINKS
 function updateMobileAuthLinks() {
   const userCookie = getCookie("loggedInUser");
   const mobileLoginItem = document.getElementById("mobileLoginItem");
@@ -242,7 +243,6 @@ function updateMobileAuthLinks() {
 
   if (isMobile) {
     if (userCookie) {
-      // User is logged in
       mobileLoginItem.style.display = "none";
       mobileLogoutItem.style.display = "block";
 
@@ -253,21 +253,38 @@ function updateMobileAuthLinks() {
         window.location.href = "index.html";
       });
     } else {
-      // User is not logged in
       mobileLoginItem.style.display = "block";
       mobileLogoutItem.style.display = "none";
     }
   } else {
-    // Desktop: hide both
     mobileLoginItem.style.display = "none";
     mobileLogoutItem.style.display = "none";
   }
 }
 
-// Run when page loads
 document.addEventListener("DOMContentLoaded", updateMobileAuthLinks);
-
-// Re-run when screen resizes (important)
 window.addEventListener("resize", updateMobileAuthLinks);
 
+// ✅ ACCOUNT TAB LOGOUT FUNCTION
+document.addEventListener("DOMContentLoaded", function () {
+  const logoutTab = document.querySelector('.account__tab[data-action="logout"]');
 
+  if (logoutTab) {
+    logoutTab.addEventListener("click", function () {
+      deleteCookie("loggedInUser");
+      alert("You have been logged out.");
+      window.location.href = "index.html";
+    });
+  }
+});
+
+// ✅ Redirect logged-in users away from login-register.html
+document.addEventListener("DOMContentLoaded", function () {
+  const user = getCookie("loggedInUser");
+
+  const isLoginRegisterPage = window.location.pathname.includes("login-register.html");
+
+  if (user && isLoginRegisterPage) {
+    window.location.href = "index.html"; // or "accounts.html" if you have a dashboard
+  }
+});

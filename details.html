@@ -1,5 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+  <script>
+    function getCookie(name) {
+      const cname = name + "=";
+      const decodedCookie = decodeURIComponent(document.cookie);
+      const ca = decodedCookie.split(';');
+      for (let i = 0; i < ca.length; i++) {
+        let c = ca[i].trim();
+        if (c.indexOf(cname) === 0) {
+          return c.substring(cname.length, c.length);
+        }
+      }
+      return "";
+    }
+  
+    const user = getCookie("loggedInUser");
+    if (!user) {
+      window.location.href = "login-register.html";
+    }
+  </script>
+  
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -114,382 +134,78 @@
     <!--=============== MAIN ===============-->
     <main class="main">
       <!--=============== BREADCRUMB ===============-->
-<section class="breadcrumb">
-  <ul class="breadcrumb__list flex container">
-    <li><a href="index.html" class="breadcrumb__link">Home</a></li>
-    <li><span class="breadcrumb__separator">></span></li>
-    <li><a href="shop.html" class="breadcrumb__link">Poco</a></li>
-    <li><span class="breadcrumb__separator">></span></li>
-    <li><span class="breadcrumb__link">Poco X6 Pro 5G</span></li>
-  </ul>
-</section>
-
-
- <!--=============== PRODUCT DETAILS ===============-->
-<section class="details section--lg">
-  <div class="details__container container grid">
-
-    <!-- Product Images -->
-    <div class="details__group">
-      <img src="./assets/img/Poco-1-3.png" alt="Poco X6 Pro Front" class="details__img" />
-      <div class="details__small-images grid">
-        <img src="./assets/img/Poco-1-1.png" alt="Side View" class="details__small-img" />
-        <img src="./assets/img/Poco-1-2.png" alt="Back View" class="details__small-img" />
-        <img src="./assets/img/Poco-1-4.png" alt="Front View" class="details__small-img" />
-        <img src="./assets/img/Poco-1-5.png" alt="Front View" class="details__small-img" />
-
-      </div>
-    </div>
-
-    <!-- Product Info -->
-    <div class="details__group">
-      <h3 class="details__title">Poco X6 Pro 5G</h3>
-      <p class="details__brand">Brand: <span>Poco</span></p>
-
-      <div class="details__price flex">
-        <span class="new__price">₱17,999</span>
-        <span class="old__price">₱19,999</span>
-        <span class="save__price">10% Off</span>
-      </div>
-
-      <p class="short__description">
-        Unleash blazing-fast performance with the Poco X6 Pro 5G powered by MediaTek Dimensity 8300 Ultra. Equipped with a 120Hz AMOLED display, flagship-tier 64MP triple camera, and up to 256GB of storage — this device redefines value and speed.
-      </p>
-
-      <ul class="products__list">
-        <li class="list__item flex"><i class="fi-rs-crown"></i> 1 Year Official Warranty</li>
-        <li class="list__item flex"><i class="fi-rs-refresh"></i> 7 Days Replacement Policy</li>
-        <li class="list__item flex"><i class="fi-rs-credit-card"></i> Cash on Delivery Available</li>
-      </ul>
-
-      <!-- VARIANT: Color Options -->
-      <div class="details__color flex">
-        <span class="details__color-title">Color</span>
-        <ul class="color__list">
-          <li><a href="#" class="color__link" title="Black" style="background-color: #000;"></a></li>
-          <li><a href="#" class="color__link" title="Yellow" style="background-color: #FFD700;"></a></li>
-          <li><a href="#" class="color__link" title="Gray" style="background-color: #888;"></a></li>
+      <section class="breadcrumb">
+        <ul class="breadcrumb__list flex container">
+          <li><a href="index.html" class="breadcrumb__link">Home</a></li>
+          <li><span class="breadcrumb__link">></span></li>
+          <li><span class="breadcrumb__link">My Orders</span></li>
+          <li><span class="breadcrumb__link">></span></li>
+          <li><span class="breadcrumb__link">Order Details</span></li>
         </ul>
-      </div>
-
-      <!-- VARIANT: Storage Options -->
-      <div class="details__size flex">
-        <span class="details__size-title">Storage</span>
-        <ul class="size__list">
-          <li><a href="#" class="size__link size-active">128GB</a></li>
-          <li><a href="#" class="size__link">256GB</a></li>
-        </ul>
-      </div>
-
-      <!-- Actions -->
-      <div class="details__action">
-        <input type="number" class="quantity" value="1" />
-        <a href="#" class="btn btn--sm">Add To Cart</a>
-        <a href="#" class="details__action-btn"><i class="fi fi-rs-heart"></i></a>
-      </div>
-
-      <!-- Meta Info -->
-      <ul class="details__meta">
-        <li class="meta__list flex"><span>SKU:</span>POCO-X6PRO-5G</li>
-        <li class="meta__list flex"><span>Tags:</span>Smartphone, 5G, Poco, Android</li>
-        <li class="meta__list flex"><span>Availability:</span>12 Items in Stock</li>
-      </ul>
-    </div>
-
-  </div>
-</section>
-
-
-      <!--=============== DETAILS TAB ===============-->
-<section class="details__tab container">
-  <div class="detail__tabs">
-    <span class="detail__tab active-tab" data-target="#info">
-      Specifications
-    </span>
-    <span class="detail__tab" data-target="#reviews">Reviews (3)</span>
-  </div>
-
-  <div class="details__tabs-content">
-    <!-- SPECIFICATIONS TAB -->
-    <div class="details__tab-content active-tab" content id="info">
-      <table class="info__table">
-        <tr>
-          <th>Model</th>
-          <td>Poco X6 Pro 5G</td>
-        </tr>
-        <tr>
-          <th>Display</th>
-          <td>6.67" AMOLED, 120Hz, HDR10+, 1B colors</td>
-        </tr>
-        <tr>
-          <th>Processor</th>
-          <td>MediaTek Dimensity 8300 Ultra (4nm)</td>
-        </tr>
-        <tr>
-          <th>RAM</th>
-          <td>8GB / 12GB LPDDR5</td>
-        </tr>
-        <tr>
-          <th>Storage</th>
-          <td>128GB / 256GB UFS 4.0</td>
-        </tr>
-        <tr>
-          <th>Rear Camera</th>
-          <td>64MP (OIS) + 8MP Ultra-wide + 2MP Macro</td>
-        </tr>
-        <tr>
-          <th>Front Camera</th>
-          <td>16MP</td>
-        </tr>
-        <tr>
-          <th>Battery</th>
-          <td>5000mAh, 67W Turbo Charging</td>
-        </tr>
-        <tr>
-          <th>Operating System</th>
-          <td>Android 14 (HyperOS)</td>
-        </tr>
-        <tr>
-          <th>Connectivity</th>
-          <td>5G, Wi-Fi 6, Bluetooth 5.3, NFC</td>
-        </tr>
-        <tr>
-          <th>Fingerprint Sensor</th>
-          <td>Under Display (Optical)</td>
-        </tr>
-        <tr>
-          <th>Available Colors</th>
-          <td>Black, Yellow, Gray</td>
-        </tr>
-        <tr>
-          <th>Dimensions</th>
-          <td>160.5 x 74.3 x 8.3 mm</td>
-        </tr>
-        <tr>
-          <th>Weight</th>
-          <td>190g</td>
-        </tr>
-      </table>
-    </div>
-
-
-
-    <div class="details__tab-content" content id="reviews">
-      <div class="reviews__container grid">
+      </section>
     
-        <!-- Review 1 -->
-        <div class="review__single">
-          <div>
-            <img src="./assets/img/avatar-1.jpg" alt="Jomil Bestudio" class="review__img" />
-            <h4 class="review__title">Jomil</h4>
-          </div>
-          <div class="review__data">
-            <div class="review__rating">
-              <i class="fi fi-rs-star"></i>
-              <i class="fi fi-rs-star"></i>
-              <i class="fi fi-rs-star"></i>
-              <i class="fi fi-rs-star"></i>
-              <i class="fi fi-rs-star"></i>
+      <!--=============== ORDER DETAILS ===============-->
+      <section class="order section--lg">
+        <div class="checkout__container container grid">
+          <div class="checkout__group">
+            <h3 class="section__title">Order Details</h3>
+    
+            <div class="order__card">
+              <div class="order__header">
+                <span>Order No: <strong>#PH123456789</strong></span>
+                <span class="order__status processing">In Transit</span>
+              </div>
+    
+              <!-- OnePlus 13T -->
+              <div class="order__item">
+                <img src="assets/img/Phones/25.png" alt="OnePlus 13T" class="order__img" />
+                <div class="order__details">
+                  <h4 class="order__product-name">OnePlus 13T 5G 256GB</h4>
+                  <p class="order__meta">Color: Emerald Green</p>
+                  <p class="order__meta">Qty: 1</p>
+                  <p class="order__meta">₱29,999</p>
+                  <p class="order__meta">Est. Delivery: May 6, 2025</p>
+                </div>
+              </div>
+    
+              <!-- iPhone 14 -->
+              <div class="order__item">
+                <img src="assets/img/Phones/27.png" alt="iPhone 14" class="order__img" />
+                <div class="order__details">
+                  <h4 class="order__product-name">iPhone 14 128GB</h4>
+                  <p class="order__meta">Color: Midnight Black</p>
+                  <p class="order__meta">Qty: 2</p>
+                  <p class="order__meta">₱53,990 each</p>
+                  <p class="order__meta">Est. Delivery: May 6–7, 2025</p>
+                </div>
+              </div>
+    
+              <!-- Summary -->
+              <div class="order__summary">
+                <div class="flex-between">
+                  <span>Subtotal</span>
+                  <span>₱137,979</span>
+                </div>
+                <div class="flex-between">
+                  <span>Shipping (LBC Standard)</span>
+                  <span>₱150</span>
+                </div>
+                <div class="flex-between order__total">
+                  <span>Total</span>
+                  <span>₱138,129</span>
+                </div>
+              </div>
             </div>
-            <p class="review__description">
-              Super fast delivery! The Poco X6 Pro is insanely powerful for its price. Perfect for gaming and content creation.
-            </p>
-            <span class="review__date">April 15, 2024 at 9:32 am</span>
           </div>
-        </div>
-    
-        <!-- Review 2 -->
-        <div class="review__single">
-          <div>
-            <img src="./assets/img/avatar-2.jpg" alt="Melvin Magsalay" class="review__img" />
-            <h4 class="review__title">Melvin</h4>
-          </div>
-          <div class="review__data">
-            <div class="review__rating">
-              <i class="fi fi-rs-star"></i>
-              <i class="fi fi-rs-star"></i>
-              <i class="fi fi-rs-star"></i>
-              <i class="fi fi-rs-star"></i>
-              <i class="fi fi-rs-star"></i>
-            </div>
-            <p class="review__description">
-              One of the best phones I’ve owned. The AMOLED display and the battery life are top-notch. Highly recommended!
-            </p>
-            <span class="review__date">April 17, 2024 at 4:45 pm</span>
-          </div>
-        </div>
-    
-        <!-- Review 3 -->
-        <div class="review__single">
-          <div>
-            <img src="./assets/img/avatar-3.jpg" alt="Kenneth Valencia" class="review__img" />
-            <h4 class="review__title">Kenneth Valencia</h4>
-          </div>
-          <div class="review__data">
-            <div class="review__rating">
-              <i class="fi fi-rs-star"></i>
-              <i class="fi fi-rs-star"></i>
-              <i class="fi fi-rs-star"></i>
-              <i class="fi fi-rs-star"></i>
-              <i class="fi fi-rs-star"></i>
-            </div>
-            <p class="review__description">
-              Amazing performance and camera for this price range. This phone feels like a flagship but costs way less!
-            </p>
-            <span class="review__date">April 18, 2024 at 11:12 am</span>
-          </div>
-        </div>
-    
-      </div>
-    
-      <!-- Review Form -->
-      <div class="review__form">
-        <h4 class="review__form-title">Add a review</h4>
-        <div class="rate__product">
-          <i class="fi fi-rs-star"></i>
-          <i class="fi fi-rs-star"></i>
-          <i class="fi fi-rs-star"></i>
-          <i class="fi fi-rs-star"></i>
-          <i class="fi fi-rs-star"></i>
-        </div>
-        <form action="" class="form grid">
-          <textarea class="form__input textarea" placeholder="Write Comment"></textarea>
-          <div class="form__group grid">
-            <input type="text" placeholder="Name" class="form__input">
-            <input type="email" placeholder="Email" class="form__input">
-          </div>
-          <div class="form__btn">
-            <button class="btn">Submit Review</button>
-          </div>
-        </form>
-      </div>
-    </div>
-    
         </div>
       </section>
+    </main>
+    
+    
 
-      <!--=============== PRODUCTS ===============-->
-<section class="products container section--lg">
-  <h3 class="section__title"><span>Related</span> Products</h3>
-  <div class="products__container grid">
 
-    <!-- Product 1 -->
-    <div class="product__item">
-      <div class="product__banner">
-        <a href="details.html" class="product__images">
-          <img   src="assets/img/Poco-1-1.png" alt="Poco F5 Pro" class="product__img default" />
-          <img   src="assets/img/Poco-1-2.png" alt="Poco F5 Pro Alt" class="product__img hover" />
-        </a>
-        <div class="product__actions">
-          <a href="#" class="action__btn" aria-label="Quick View"><i class="fi fi-rs-eye"></i></a>
-          <a href="#" class="action__btn" aria-label="Add to Wishlist"><i class="fi fi-rs-heart"></i></a>
-          <a href="#" class="action__btn" aria-label="Compare"><i class="fi fi-rs-shuffle"></i></a>
-        </div>
-        <div class="product__badge light-pink">Hot</div>
-      </div>
-      <div class="product__content">
-        <span class="product__category">Poco</span>
-        <a href="details.html"><h3 class="product__title">Poco F5 Pro 5G 256GB</h3></a>
-        <div class="product__rating">
-          <i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i>
-        </div>
-        <div class="product__price flex">
-          <span class="new__price">₱26,990</span>
-          <span class="old__price">₱28,990</span>
-        </div>
-        <a href="#" class="action__btn cart__btn" aria-label="Add To Cart"><i class="fi fi-rs-shopping-bag-add"></i></a>
-      </div>
-    </div>
-
-    <!-- Product 2 -->
-    <div class="product__item">
-      <div class="product__banner">
-        <a href="details.html" class="product__images">
-          <img   src="assets/img/Poco-1-1.png" alt="Samsung A54" class="product__img default" />
-          <img   src="assets/img/Poco-1-2.png" alt="Samsung A54 Alt" class="product__img hover" />
-        </a>
-        <div class="product__actions">
-          <a href="#" class="action__btn" aria-label="Quick View"><i class="fi fi-rs-eye"></i></a>
-          <a href="#" class="action__btn" aria-label="Add to Wishlist"><i class="fi fi-rs-heart"></i></a>
-          <a href="#" class="action__btn" aria-label="Compare"><i class="fi fi-rs-shuffle"></i></a>
-        </div>
-        <div class="product__badge light-green">Hot</div>
-      </div>
-      <div class="product__content">
-        <span class="product__category">Samsung</span>
-        <a href="details.html"><h3 class="product__title">Galaxy A54 5G 128GB</h3></a>
-        <div class="product__rating">
-          <i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i>
-        </div>
-        <div class="product__price flex">
-          <span class="new__price">₱24,990</span>
-          <span class="old__price">₱26,990</span>
-        </div>
-        <a href="#" class="action__btn cart__btn" aria-label="Add To Cart"><i class="fi fi-rs-shopping-bag-add"></i></a>
-      </div>
-    </div>
-
-    <!-- Product 3 -->
-    <div class="product__item">
-      <div class="product__banner">
-        <a href="details.html" class="product__images">
-          <img   src="assets/img/Poco-1-1.png" alt="Realme GT5 Pro" class="product__img default" />
-          <img   src="assets/img/Poco-1-2.png" alt="Realme GT5 Pro Alt" class="product__img hover" />
-        </a>
-        <div class="product__actions">
-          <a href="#" class="action__btn" aria-label="Quick View"><i class="fi fi-rs-eye"></i></a>
-          <a href="#" class="action__btn" aria-label="Add to Wishlist"><i class="fi fi-rs-heart"></i></a>
-          <a href="#" class="action__btn" aria-label="Compare"><i class="fi fi-rs-shuffle"></i></a>
-        </div>
-        <div class="product__badge light-orange">Hot</div>
-      </div>
-      <div class="product__content">
-        <span class="product__category">Realme</span>
-        <a href="details.html"><h3 class="product__title">Realme GT5 Pro 512GB</h3></a>
-        <div class="product__rating">
-          <i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i>
-        </div>
-        <div class="product__price flex">
-          <span class="new__price">₱38,999</span>
-          <span class="old__price">₱41,999</span>
-        </div>
-        <a href="#" class="action__btn cart__btn" aria-label="Add To Cart"><i class="fi fi-rs-shopping-bag-add"></i></a>
-      </div>
-    </div>
-
-    <!-- Product 4 -->
-    <div class="product__item">
-      <div class="product__banner">
-        <a href="details.html" class="product__images">
-          <img   src="assets/img/Poco-1-1.png" alt="Xiaomi 14 Ultra" class="product__img default" />
-          <img   src="assets/img/Poco-1-2.png" alt="Xiaomi 14 Ultra Alt" class="product__img hover" />
-        </a>
-        <div class="product__actions">
-          <a href="#" class="action__btn" aria-label="Quick View"><i class="fi fi-rs-eye"></i></a>
-          <a href="#" class="action__btn" aria-label="Add to Wishlist"><i class="fi fi-rs-heart"></i></a>
-          <a href="#" class="action__btn" aria-label="Compare"><i class="fi fi-rs-shuffle"></i></a>
-        </div>
-        <div class="product__badge light-blue">Hot</div>
-      </div>
-      <div class="product__content">
-        <span class="product__category">Xiaomi</span>
-        <a href="details.html"><h3 class="product__title">Xiaomi 14 Ultra 512GB</h3></a>
-        <div class="product__rating">
-          <i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i><i class="fi fi-rs-star"></i>
-        </div>
-        <div class="product__price flex">
-          <span class="new__price">₱59,990</span>
-          <span class="old__price">₱62,990</span>
-        </div>
-        <a href="#" class="action__btn cart__btn" aria-label="Add To Cart"><i class="fi fi-rs-shopping-bag-add"></i></a>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-    <!--=============== NEWSLETTER ===============-->
-    <section class="newsletter section">
+     <!--=============== NEWSLETTER ===============-->
+     <section class="newsletter section">
       <div class="newsletter__container container grid">
         <h3 class="newsletter__title flex">
           <img src="./assets/img/icon-email.svg" alt="" class="newsletter__icon" />

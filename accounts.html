@@ -161,8 +161,10 @@
             <p class="account__tab" data-target="#change-password">
               <i class="fi fi-rs-settings-sliders"></i> Change Password
             </p>
-            <p class="account__tab"><i class="fi fi-rs-exit"></i> Logout</p>
-          </div>
+            <p class="account__tab" data-action="logout">
+              <i class="fi fi-rs-exit"></i> Logout
+            </p>
+                      </div>
           <div class="tabs__content">
             <div class="tabs__content">
 
@@ -178,49 +180,47 @@
               <div class="tab__content" content id="orders">
                 <h3 class="tab__header">Your Orders</h3>
                 <div class="tab__body">
-              
-                  <!-- Order Summary Card -->
+
+                  <!-- Order Summary Card with Two Products -->
                   <div class="order__card">
                     <div class="order__header flex-between">
-                      <span>Order ID: #1357</span>
+                      <span>Order ID: #PH102938</span>
                       <span>Status: <strong class="order__status processing">Processing</strong></span>
                     </div>
+                
+                  
+                    <!-- Product 2: OnePlus 13T -->
                     <div class="order__item grid">
-                      <img src="assets/img/Poco-1-1.png" alt="Poco X5 Pro" class="order__img">
+                      <img src="assets/img/Phones/25.png" alt="OnePlus 13T" class="order__img">
                       <div class="order__details">
-                        <h4 class="order__product-name">Poco X5 Pro 5G 128GB</h4>
+                        <h4 class="order__product-name">OnePlus 13T 5G 256GB</h4>
                         <p class="order__meta">Quantity: 1</p>
-                        <p class="order__meta">Price: ₱16,999</p>
-                        <p class="order__meta">Estimated Delivery: May 4, 2025</p>
+                        <p class="order__meta">Price: ₱29,999</p>
+                        <p class="order__meta">Estimated Delivery: May 6, 2025</p>
                       </div>
-                      <div class="order__actions">
-                        <a href="#" class="btn btn--sm">Track Order</a>
-                        <a href="#" class="btn btn--sm btn-outline">View Details</a>
+                    </div>
+                
+                      <!-- Product 1: iPhone 14 -->
+                      <div class="order__item grid">
+                        <img src="assets/img/Phones/27.png" alt="iPhone 14" class="order__img">
+                        <div class="order__details">
+                          <h4 class="order__product-name">iPhone 14 128GB</h4>
+                          <p class="order__meta">Quantity: 1</p>
+                          <p class="order__meta">Price: ₱53,990</p>
+                          <p class="order__meta">Estimated Delivery: May 6, 2025</p>
+                        </div>
                       </div>
+                
+                  
+                    <!-- Single Button for the Whole Order -->
+                    <div class="order__actions" style="margin-top: 1rem;">
+                      <a href="details.html" class="btn btn--sm">View Details</a>
                     </div>
                   </div>
-              
-                  <div class="order__card">
-                    <div class="order__header flex-between">
-                      <span>Order ID: #2468</span>
-                      <span>Status: <strong class="order__status completed">Completed</strong></span>
-                    </div>
-                    <div class="order__item grid">
-                      <img src="assets/img/iPhone-13.png" alt="iPhone 13 Mini" class="order__img">
-                      <div class="order__details">
-                        <h4 class="order__product-name">iPhone 13 Mini 128GB</h4>
-                        <p class="order__meta">Quantity: 1</p>
-                        <p class="order__meta">Price: ₱44,990</p>
-                        <p class="order__meta">Delivered: April 21, 2025</p>
-                      </div>
-                      <div class="order__actions">
-                        <a href="#" class="btn btn--sm">Buy Again</a>
-                        <a href="#" class="btn btn--sm btn-outline">View Details</a>
-                      </div>
-                    </div>
-                  </div>
-              
+                
                 </div>
+                
+                
               </div>
               
               <div class="tab__content" content id="update-profile">
@@ -318,73 +318,72 @@
     </main>
 
     <!--=============== FOOTER ===============-->
-  <footer class="footer container">
-    <div class="footer__container grid">
-  
-      <div class="footer__content">
-        <a href="index.html" class="footer__logo">
-          <img src="./assets/img/logo.svg" alt="Soppix logo" class="footer__logo-img" />
-        </a>
-        <h4 class="footer__subtitle">Contact</h4>
-        <p class="footer__description">
-          <span>Address:</span> Tagum City, Philippines
-        </p>
-        <p class="footer__description">
-          <span>Phone:</span> +63 9760306444
-        </p>
-        <p class="footer__description">
-          <span>Hours:</span> 24 hours, Monday to Sunday
-        </p>
-        <div class="footer__social">
-          <h4 class="footer__subtitle">Follow Us</h4>
-          <div class="footer__links flex">
-            <a href="#"><img src="./assets/img/icon-facebook.svg" alt="Facebook" class="footer__social-icon" /></a>
-            <a href="#"><img src="./assets/img/icon-twitter.svg" alt="Twitter" class="footer__social-icon" /></a>
-            <a href="#"><img src="./assets/img/icon-instagram.svg" alt="Instagram" class="footer__social-icon" /></a>
-            <a href="#"><img src="./assets/img/icon-pinterest.svg" alt="Pinterest" class="footer__social-icon" /></a>
-            <a href="#"><img src="./assets/img/icon-youtube.svg" alt="YouTube" class="footer__social-icon" /></a>
+    <footer class="footer container">
+      <div class="footer__container grid">
+    
+        <div class="footer__content">
+          <a href="index.html" class="footer__logo">
+            <img src="./assets/img/logo.svg" alt="Soppix logo" class="footer__logo-img" />
+          </a>
+          <h4 class="footer__subtitle">Contact</h4>
+          <p class="footer__description">
+            <span>Address:</span> Tagum City, Philippines
+          </p>
+          <p class="footer__description">
+            <span>Phone:</span> +63 9760306444
+          </p>
+          <p class="footer__description">
+            <span>Hours:</span> 24 hours, Monday to Sunday
+          </p>
+          <div class="footer__social">
+            <h4 class="footer__subtitle">Follow Us</h4>
+            <div class="footer__links flex">
+              <a href="#"><img src="./assets/img/icon-facebook.svg" alt="Facebook" class="footer__social-icon" /></a>
+              <a href="#"><img src="./assets/img/icon-twitter.svg" alt="Twitter" class="footer__social-icon" /></a>
+              <a href="#"><img src="./assets/img/icon-instagram.svg" alt="Instagram" class="footer__social-icon" /></a>
+              <a href="#"><img src="./assets/img/icon-pinterest.svg" alt="Pinterest" class="footer__social-icon" /></a>
+              <a href="#"><img src="./assets/img/icon-youtube.svg" alt="YouTube" class="footer__social-icon" /></a>
+            </div>
           </div>
         </div>
+    
+        <div class="footer__content">
+          <h3 class="footer__title">About</h3>
+          <ul class="footer__links">
+            <li><a href="about.html" class="footer__link">About Us</a></li>
+            <li><a href="DeliveryInformation.html" class="footer__link">Delivery Information</a></li>
+            <li><a href="privacy.html" class="footer__link">Privacy Policy</a></li>
+            <li><a href="terms.html" class="footer__link">Terms & Conditions</a></li>
+            <li><a href="contact.html" class="footer__link">Contact Us</a></li>
+            <li><a href="supportcenter.html" class="footer__link">Support Center</a></li>
+          </ul>
+        </div>
+    
+        <div class="footer__content">
+          <h3 class="footer__title">My Account</h3>
+          <ul class="footer__links">
+            <li><a href="login-register.html" class="footer__link">Sign In</a></li>
+            <li><a href="cart.html" class="footer__link">View Cart</a></li>
+            <li><a href="wishlist.html" class="footer__link">My Wishlist</a></li>
+            <li><a href="track.html" class="footer__link">Track My Order</a></li>
+            <li><a href="help.html" class="footer__link">Help</a></li>
+          </ul>
+        </div>
+    
+        <div class="footer__content">
+          <h3 class="footer__title">Secured Payment Gateways</h3>
+          <img src="./assets/img/payment-method.png" alt="Payment Methods" class="payment__img" />
+        </div>
+    
       </div>
-  
-      <div class="footer__content">
-        <h3 class="footer__title">About</h3>
-        <ul class="footer__links">
-          <li><a href="#" class="footer__link">About Us</a></li>
-          <li><a href="#" class="footer__link">Delivery Information</a></li>
-          <li><a href="#" class="footer__link">Privacy Policy</a></li>
-          <li><a href="#" class="footer__link">Terms & Conditions</a></li>
-          <li><a href="#" class="footer__link">Contact Us</a></li>
-          <li><a href="#" class="footer__link">Support Center</a></li>
-        </ul>
+    
+      <div class="footer__bottom">
+        <p class="copyright">
+          &copy; 2025 <strong>Shoppix</strong>. All rights reserved.
+        </p>
+        <span class="designer">Designed by Cirde M. Mosquito</span>
       </div>
-  
-      <div class="footer__content">
-        <h3 class="footer__title">About</h3>
-        <ul class="footer__links">
-          <li><a href="about.html" class="footer__link">About Us</a></li>
-          <li><a href="DeliveryInformation.html" class="footer__link">Delivery Information</a></li>
-          <li><a href="privacy.html" class="footer__link">Privacy Policy</a></li>
-          <li><a href="terms.html" class="footer__link">Terms & Conditions</a></li>
-          <li><a href="contact.html" class="footer__link">Contact Us</a></li>
-          <li><a href="supportcenter.html" class="footer__link">Support Center</a></li>
-        </ul>
-      </div>
-  
-      <div class="footer__content">
-        <h3 class="footer__title">Secured Payment Gateways</h3>
-        <img src="./assets/img/payment-method.png" alt="Payment Methods" class="payment__img" />
-      </div>
-  
-    </div>
-  
-    <div class="footer__bottom">
-      <p class="copyright">
-        &copy; 2025 <strong>Shoppix</strong>. All rights reserved.
-      </p>
-      <span class="designer">Designed by Cirde M. Mosquito</span>
-    </div>
-  </footer>
+    </footer>
 
   <!--=============== SWIPER JS ===============-->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
